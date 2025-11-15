@@ -96,6 +96,7 @@ footer:
     #   icon: "fab fa-fw fa-instagram"
     #   url: "https://instagram.com/"
 
+#collections
 collections:
   research:
     output: true

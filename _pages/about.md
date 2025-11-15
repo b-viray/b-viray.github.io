@@ -1,7 +1,7 @@
 ---
 permalink: /about/
 title: "About"
-classes: "wide"
+classes: wide
 # redirect_from:
 #     - /about/
 ---

@@ -70,7 +70,7 @@ author:
     - label: "Website"
       icon: "fas fa-fw fa-link"
     - label: "ArXiv"
-      icon: "fas fa-fw fa-link"
+      icon: "/assets/images/arxiv-icon.jpg"
       url: "https://arxiv.org/a/viray_b_1.html"
     - label: "MathSciNet"
       icon: "fas fa-fw fa-link"

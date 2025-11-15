@@ -16,7 +16,7 @@
 title: Bianca Viray
 email: bviray@uw.edu
 description: >- # this means to ignore newlines until "baseurl:"
-  Professional site for Bianca Viray, arithmetic geometer and professor at the University of Washington
+  Professional site for Bianca Viray
 # twitter_username: username
 url: "https://b-viray.github.io/"
 baseurl: "" # the subpath of your site, e.g. "/blog"
@@ -66,7 +66,7 @@ author:
   links:
     - label: "Website"
       icon: "fas fa-fw fa-link"
-      url: "https://"
+      url: "https://b-viray.github.io/"
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
       url: "mailto:bviray@uw.edu"
@@ -99,7 +99,7 @@ footer:
 defaults:
   # _posts
   - scope:
-      path: ""
+      path: "_posts"
       type: posts
     values:
       layout: single

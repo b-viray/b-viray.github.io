@@ -2,7 +2,6 @@
 permalink: /research/
 title: "Research"
 layout: collection
-permalink: /portfolio/
-collection: portfolio
+collection: research
 entries_layout: grid
 ---

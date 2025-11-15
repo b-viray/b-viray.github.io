@@ -1,10 +1,13 @@
 ---
-permalink: /about/
+permalink: /
 title: "About"
 classes: wide
+redirect_from: 
+  - /about/
+  - /about.html
 ---
 
-I currently hold the Craig McKibben and Sarah Merner Professorship at the [Department of Mathematics](https://math.washington.edu/) at the [University of Washington](https://www.uw.edu/) located in Seattle, Washington. I work in number theory and arithmetic geometry. Complete lists of my preprints and publications can be found on my [arXiv](https://arxiv.org/a/viray_b_1.html) page and on my [MathSciNet author page](https://mathscinet.ams.org/mathscinet/MRAuthorID/890397) (subscription required). Overviews of my research areas and links to talks can be found on my [Research] page.
+I am a Craig McKibben and Sarah Merner Professor at the [Department of Mathematics](https://math.washington.edu/) at the [University of Washington](https://www.uw.edu/) located in Seattle, Washington. I am an arithmetic geometer broadly interested in rational and algebraic points on varieties. Overviews of different aspects of my research program and links to talks can be found on my [Research] page. Complete lists of my preprints and publications can be found on my [arXiv](https://arxiv.org/a/viray_b_1.html) page and on my [MathSciNet author page](https://mathscinet.ams.org/mathscinet/MRAuthorID/890397) (subscription required). 
 
 At the University of Washington, I organize the [Number Theory Seminar](https://math.washington.edu/events/series/number-theory-seminar). I am a member of the [Women in Numbers](https://womeninnumbertheory.org/) steering committee and a co-organizer and co-founder of the Roots of Unity workshop series. 
 

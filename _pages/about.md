@@ -1,9 +1,9 @@
 ---
-permalink: /
+permalink: /about/
 title: "About"
 
-redirect_from:
-    - /about/
+# redirect_from:
+#     - /about/
 ---
 
 I am a Craig McKibben and Sarah Merner Professor at the [Department of Mathematics](https://math.washington.edu/) at the [University of Washington](https://www.uw.edu/) located in Seattle, Washington. I am an arithmetic geometer broadly interested in rational and algebraic points on varieties. Overviews of different aspects of my research program and links to talks can be found on my [Research] page. Complete lists of my preprints and publications can be found on my [arXiv](https://arxiv.org/a/viray_b_1.html) page and on my [MathSciNet author page](https://mathscinet.ams.org/mathscinet/MRAuthorID/890397) (subscription required). 

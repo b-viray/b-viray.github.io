@@ -16,11 +16,8 @@
 title: Bianca Viray
 email: bviray@uw.edu
 description: >- # this means to ignore newlines until "baseurl:"
-  Professional site for Bianca Viray
+  Professional site for Bianca Viray, arithmetic geometer and professor at the University of Washington
 # twitter_username: username
-url: "https://b-viray.github.io/"
-baseurl: "" # the subpath of your site, e.g. "/blog"
-repository: "b-viray/b-viray.github.io"
 github_username: b-viray
 minimal_mistakes_skin: default
 search: true
@@ -29,9 +26,9 @@ search: true
 markdown: kramdown
 remote_theme: mmistakes/minimal-mistakes
 # Outputting
-permalink: /:categories/:title/
-# paginate: 5 # amount of posts to show
-# paginate_path: /page:num/
+permalink: /about.md
+paginate: 5 # amount of posts to show
+paginate_path: /page:num/
 timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 include:
@@ -66,7 +63,7 @@ author:
   links:
     - label: "Website"
       icon: "fas fa-fw fa-link"
-      url: "https://b-viray.github.io/"
+      url: "https://"
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
       url: "mailto:bviray@uw.edu"
@@ -99,7 +96,7 @@ footer:
 defaults:
   # _posts
   - scope:
-      path: "_posts"
+      path: ""
       type: posts
     values:
       layout: single

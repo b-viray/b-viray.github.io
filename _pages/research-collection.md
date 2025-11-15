@@ -5,3 +5,4 @@ layout: collection
 collection: research
 entries_layout: grid
 ---
+testing collection `research`.

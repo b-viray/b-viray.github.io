@@ -1,0 +1,44 @@
+<!-- ---
+title: "Bio"
+--- -->
+
+I am an arithmetic geometer broadly interested in rational and algebraic points on varieties. Overviews of different aspects of my research program and links to talks can be found on my [Research](research.qmd) page. Complete lists of my preprints and publications can be found on my [arXiv](https://arxiv.org/a/viray_b_1.html) page and on my [MathSciNet author page](https://mathscinet.ams.org/mathscinet/MRAuthorID/890397) (subscription required). 
+
+
+I firmly believe that a collaborative and supportive research environment stimulates excellent research. To prove radically new theorems, one has to deeply and strongly believe in one's own ideas, and that is easiest when one is surrounded by a supportive community. Conversely, biased expectations and harassment stifle and suffocate one's creativity and ability to think (not to mention being downright distressing). In my roles as organizer, advisor, mentor, teacher, and collaborator, I strive to create collaborative and supportive spaces, and am receptive to [feedback](https://forms.gle/S2F2vmyYZTiat5757) on ways to improve. Additionally, if someone has or is experiencing harassment, and would like to talk, please reach out to me. (<small>*Note*: at the University of Washington, I am a mandatory reporter, which means I must report any possible discrimination, harassment, or sexual misconduct involving a UW student, but I do not have to report the student's name. See [here](https://uw-s3-cdn.s3.us-west-2.amazonaws.com/wp-content/uploads/sites/245/2025/10/24110432/Employee-Reporting-Obligations-Quick-Reference-Guide.pdf) for more details.</small>)
+
+***
+
+I have been a faculty member in the [Department of Mathematics](https://math.washington.edu/) at the [University of Washington](https://www.uw.edu/) since 2014. I currently hold the Craig McKibben and Sarah Merner Professorship in the department. At the University of Washington, I teach a range of classes at all levels, and I organize the [Number Theory Seminar](https://math.washington.edu/events/series/number-theory-seminar). 
+
+***
+
+It is my responsibility and privilege to be able to contribute to the mathematical community more broadly than through research alone. From 2020 to 2026, I served on the Council of the American Mathematical Society, first as a member at large, and then as Vice President, and from 2022-26 on the Executive Committee of Council. I 
+I am a member of the [Women in Numbers](https://womeninnumbertheory.org/) steering committee and a co-organizer and co-founder of the Roots of Unity workshop series. 
+
+
+
+
+
+<!-- 
+
+On this site I keep a list of [my publications](papers), [presentations](talks), 
+and [my CV](cv.pdf), as well as a [technical blog](blog.html). -->
+<!-- 
+<p></p>
+
+## Selected Projects
+
+#### R Packages
+
+**[rsi](https://github.com/Permian-Global-Research/rsi)** | Efficiently Retrieve and Process Satellite Imagery | 2024
+**[waywiser](https://mikemahoney218.github.io/waywiser/)** | Ergonomic Methods for Assessing Spatial Models | 2023  
+**[spatialsample](spatialsample.tidymodels.org/)** | Spatial Resampling Infrastructure | 2022  
+**[unifir](https://github.com/mikemahoney218/unifir)** | A Unifying API for Working with Unity in R | 2022  
+**[terrainr](https://github.com/ropensci/terrainr)** | Retrieve Data from the USGS National Map and Transform it for 3D Landscape Visualizations | 2021  
+
+
+
+This is a Quarto website.
+
+To learn more about Quarto websites visit <https://quarto.org/docs/websites>. -->

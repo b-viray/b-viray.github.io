@@ -1,5 +1,5 @@
 ---
-title: "Algebraic points on curves"
+subtitle: "Algebraic points on curves"
 ---
 
 Let C be an algebraic curve over Q, in other words, a complex Riemann surface that is described by a system of polynomial equations of rational coefficients.

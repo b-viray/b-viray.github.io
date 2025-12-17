@@ -1,0 +1,49 @@
+project:
+  type: website
+
+website:
+  title: "Bianca Viray"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home/Bio
+      - research.qmd
+    right:
+      - text: "{{< ai arxiv >}}"
+        href: https://arxiv.org/a/viray_b_1.html
+      - text: "MR"
+        href: https://mathscinet.ams.org/mathscinet/MRAuthorID/890397
+      - text: "{{< ai google-scholar >}}"
+        href: https://scholar.google.com/citations?user=uxUUoSMAAAAJ
+      - text: "{{< ai orcid >}}"
+        href: "https://orcid.org/0000-0003-3808-2366"
+
+  sidebar:
+    logo: "images/profile.jpg"
+    style: floating
+    pinned: false
+    align: center
+    contents:
+     - text: ""
+     - text: "Department of Mathematics"
+       href: https://math.washington.edu
+     - text: "University of Washington"
+       href: https://www.washington.edu  
+     - section: "Research Directions"
+       contents:
+        - text: "Algebraic points on curves"
+          href: projects/algebraicpoints.qmd
+
+
+
+format:
+  html:
+    theme:
+      # - spacelab
+      # - simplex
+      - pulse
+    css: styles.css
+
+
+
+

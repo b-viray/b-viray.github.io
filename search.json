@@ -1,0 +1,42 @@
+[
+  {
+    "objectID": "research.html",
+    "href": "research.html",
+    "title": "Research",
+    "section": "",
+    "text": "My research lies in arithmetic geometry. As the name suggests, this research area sits at the interface of two fields: arithmetic (the study of integers and rational numbers, which is heavily influenced by the prime numbers); and geometry (the study of curves, surfaces, and higher-dimensional shapes). These distinct areas are brought together through the study of solutions to polynomial equations, i.e., the study of varieties.\nA guiding philosophy of this area is Geometry controls arithmetic. For example, since the geometry of the above variety on the right is more complicated than the one on the left (the one on the right has larger genus, which is seen by the increased ‘curviness’ of the graph), the arithmetic properties of the variety on the right should also be more complicated. This turns out to be true in two senses: the rational points (i.e., the solutions with all coordinates in Q) on the variety on the right are sparser than those on the left, and it is harder to characterize all the rational points on the variety on the right.\nThis philosophy provides a powerful perspective, but many mathematical questions need to be answered to make it precise. Which aspects of the geometry are important for a given arithmetic property? When we try to understand finer arithmetic properties, do we need to delve deeper into the geometry? What are the limitations of this philosophy?"
+  },
+  {
+    "objectID": "research.html#arithmetic-geometry",
+    "href": "research.html#arithmetic-geometry",
+    "title": "Research",
+    "section": "",
+    "text": "My research lies in arithmetic geometry. As the name suggests, this research area sits at the interface of two fields: arithmetic (the study of integers and rational numbers, which is heavily influenced by the prime numbers); and geometry (the study of curves, surfaces, and higher-dimensional shapes). These distinct areas are brought together through the study of solutions to polynomial equations, i.e., the study of varieties.\nA guiding philosophy of this area is Geometry controls arithmetic. For example, since the geometry of the above variety on the right is more complicated than the one on the left (the one on the right has larger genus, which is seen by the increased ‘curviness’ of the graph), the arithmetic properties of the variety on the right should also be more complicated. This turns out to be true in two senses: the rational points (i.e., the solutions with all coordinates in Q) on the variety on the right are sparser than those on the left, and it is harder to characterize all the rational points on the variety on the right.\nThis philosophy provides a powerful perspective, but many mathematical questions need to be answered to make it precise. Which aspects of the geometry are important for a given arithmetic property? When we try to understand finer arithmetic properties, do we need to delve deeper into the geometry? What are the limitations of this philosophy?"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Bianca Viray",
+    "section": "",
+    "text": "I am an arithmetic geometer broadly interested in rational and algebraic points on varieties. Overviews of different aspects of my research program and links to talks can be found on my Research page. Complete lists of my preprints and publications can be found on my arXiv page and on my MathSciNet author page (subscription required).\nI firmly believe that a collaborative and supportive research environment stimulates excellent research. To prove radically new theorems, one has to deeply and strongly believe in one’s own ideas, and that is easiest when one is surrounded by a supportive community. Conversely, biased expectations and harassment stifle and suffocate one’s creativity and ability to think (not to mention being downright distressing). In my roles as organizer, advisor, mentor, teacher, and collaborator, I strive to create collaborative and supportive spaces, and am receptive to feedback on ways to improve. Additionally, if someone has or is experiencing harassment, and would like to talk, please reach out to me. (Note: at the University of Washington, I am a mandatory reporter, which means I must report any possible discrimination, harassment, or sexual misconduct involving a UW student, but I do not have to report the student’s name. See here for more details.)\n\nI have been a faculty member in the Department of Mathematics at the University of Washington since 2014. I currently hold the Craig McKibben and Sarah Merner Professorship in the department. At the University of Washington, I teach a range of classes at all levels, and I organize the Number Theory Seminar.\n\nIt is my responsibility and privilege to be able to contribute to the mathematical community more broadly than through research alone. From 2020 to 2026, I served on the Council of the American Mathematical Society, first as a member at large, and then as Vice President, and from 2022-26 on the Executive Committee of Council. I I am a member of the Women in Numbers steering committee and a co-organizer and co-founder of the Roots of Unity workshop series."
+  },
+  {
+    "objectID": "projects/algebraicpoints.html",
+    "href": "projects/algebraicpoints.html",
+    "title": "Bianca Viray",
+    "section": "",
+    "text": "Let C be an algebraic curve over Q, in other words, a complex Riemann surface that is described by a system of polynomial equations of rational coefficients.\nof genus at least 2, i.e., a 1-dimensional negatively curved complex manifold defined by polynomial equations with rational coefficients.\nA celebrated result of Faltings implies that, despite the hyperbolicity of C, all algebraic points on C are organized into families of nonnegative curvature. We explore how these families provide structure to access the arithmetic of C and give some applications to the study of elliptic curves. This talk is based in part on joint work with A. Bourdon, Ö. Ejder, Y. Liu, and F. Odumodu, with I. Vogt, and with I. Balçik, S. Chan, and Y. Liu.",
+    "crumbs": [
+      "Home/Bio",
+      "Research Directions",
+      "Algebraic points on curves"
+    ]
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
+  }
+]

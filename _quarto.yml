@@ -8,6 +8,8 @@ website:
       - href: index.qmd
         text: Home/Bio
       - research.qmd
+      - href: communicatingmath.qmd
+        text: Mathematical Communication
     right:
       - text: "{{< ai arxiv >}}"
         href: https://arxiv.org/a/viray_b_1.html

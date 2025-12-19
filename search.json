@@ -1,17 +1,10 @@
 [
   {
-    "objectID": "research.html",
-    "href": "research.html",
-    "title": "Research",
+    "objectID": "communicatingmath.html",
+    "href": "communicatingmath.html",
+    "title": "Bianca Viray",
     "section": "",
-    "text": "My research lies in arithmetic geometry. As the name suggests, this research area sits at the interface of two fields: arithmetic (the study of integers and rational numbers, which is heavily influenced by the prime numbers); and geometry (the study of curves, surfaces, and higher-dimensional shapes). These distinct areas are brought together through the study of solutions to polynomial equations, i.e., the study of varieties.\nA guiding philosophy of this area is Geometry controls arithmetic. For example, since the geometry of the above variety on the right is more complicated than the one on the left (the one on the right has larger genus, which is seen by the increased ‘curviness’ of the graph), the arithmetic properties of the variety on the right should also be more complicated. This turns out to be true in two senses: the rational points (i.e., the solutions with all coordinates in Q) on the variety on the right are sparser than those on the left, and it is harder to characterize all the rational points on the variety on the right.\nThis philosophy provides a powerful perspective, but many mathematical questions need to be answered to make it precise. Which aspects of the geometry are important for a given arithmetic property? When we try to understand finer arithmetic properties, do we need to delve deeper into the geometry? What are the limitations of this philosophy?"
-  },
-  {
-    "objectID": "research.html#arithmetic-geometry",
-    "href": "research.html#arithmetic-geometry",
-    "title": "Research",
-    "section": "",
-    "text": "My research lies in arithmetic geometry. As the name suggests, this research area sits at the interface of two fields: arithmetic (the study of integers and rational numbers, which is heavily influenced by the prime numbers); and geometry (the study of curves, surfaces, and higher-dimensional shapes). These distinct areas are brought together through the study of solutions to polynomial equations, i.e., the study of varieties.\nA guiding philosophy of this area is Geometry controls arithmetic. For example, since the geometry of the above variety on the right is more complicated than the one on the left (the one on the right has larger genus, which is seen by the increased ‘curviness’ of the graph), the arithmetic properties of the variety on the right should also be more complicated. This turns out to be true in two senses: the rational points (i.e., the solutions with all coordinates in Q) on the variety on the right are sparser than those on the left, and it is harder to characterize all the rational points on the variety on the right.\nThis philosophy provides a powerful perspective, but many mathematical questions need to be answered to make it precise. Which aspects of the geometry are important for a given arithmetic property? When we try to understand finer arithmetic properties, do we need to delve deeper into the geometry? What are the limitations of this philosophy?"
+    "text": "Communicating mathematics effectively\nCommunicating mathematics is an important part of one’s job as a mathematician. When I started my mathematical career, I needed to devote a substantial amount of time and effort to improve at this skill, and this improvement was greatly facilitated by feedback from my peers and mentors.\nI am continually trying to improve, so if you have any feedback for me about parts of my papers or talks you did not understand as well as you would have liked, I would love to hear it!\nIn addition to continually trying to improve my own exposition, I have also developed a number of resources on how to give effective math talks."
   },
   {
     "objectID": "index.html",
@@ -33,10 +26,10 @@
     ]
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
+    "objectID": "research.html",
+    "href": "research.html",
+    "title": "Research",
     "section": "",
-    "text": "About this site"
+    "text": "Complete lists of my preprints and publications can be found on my arXiv page and on my MathSciNet author page (subscription required).\nUnder construction: research descriptions in progress"
   }
 ]

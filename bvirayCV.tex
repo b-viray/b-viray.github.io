@@ -1,0 +1,1728 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%				CV template by Bianca Viray					%
+%	This file may be used and modified however you wish		%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[12pt]{article}
+\usepackage{graphicx,url}
+\usepackage{enumitem}
+\usepackage[T1]{fontenc} % needed to allow bold smallcaps
+
+% Color comments!
+\usepackage[usenames,dvipsnames]{color} % needed to make heading bars gray
+
+\oddsidemargin = -20pt
+\topmargin =-20pt
+\headheight = 18pt     
+\textheight = 620pt %preferred height
+\textwidth = 495pt %preferred width
+
+\parskip=.3pt plus 1pt
+
+%%%%%%%%%%%%%%%%%%%%%%% 		Header commands		%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+
+\cfoot{}	% no footers (in pagestyle fancy) 
+\fancyheadoffset{6mm}	% extends line over gray heading bars
+\lhead{{\noindent{ \large{Bianca Viray}}}}   % running left heading
+\rhead{{\thepage}}							 % running right heading
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%			Section commands	%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\sectionheading}[1]
+	{\bigskip %insert space before beginning section
+	\noindent
+	\hspace{-6.5mm}\textcolor{Gray}{\rule[.75mm]{21.5mm}{1mm}} % make Gray line
+	\hspace{.2mm}	% insert space between line and section name
+	{\large{\textbf{\textsc{#1}}}} % make section large font and bold smallcaps
+}
+
+\newenvironment{date_section}
+	{
+	\vspace{-1ex}
+	\leftmargini = 15ex
+	 \begin{itemize}[
+		 labelsep = *,
+		 labelwidth = 9ex,
+		 % leftmargin = 10ex,
+		 labelindent = 0ex,
+		 itemindent = !,
+		 font=\normalfont, 
+		 align=parleft
+		 ]
+		{}
+		\itemsep=-1.5mm}
+	{\end{itemize}\vspace{-2ex}}
+
+% To be used as
+%		\yearmo{2013}{Jun.}
+% or	\yearmo{2013}{Fall}
+% or 	\yearmo{}{2013}, etc.
+\newcommand{\yearmo}[2]{
+	\item[ 
+		{\makebox[1ex][r]{#1}}
+		\hspace{1ex}
+		{\makebox[1ex][l]{#2} }
+		] }
+
+% To be used as
+%		\yearmo{2010}{2013}
+% or	\yearmo{2010}{}
+\newcommand{\yearrange}[2]{
+	\item[ 
+		{\makebox[1ex][r]{#1}}
+		--
+		{\makebox[1ex][l]{#2} }
+		] }
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+	\thispagestyle{empty}
+
+	\centerline{{\LARGE \textbf{Bianca Viray}}}
+
+	\vspace{3mm}
+
+	\begin{center}
+		\begin{tabular}[c]{lll} %really only need 2 columns, extra one is to
+				 				% fix alignment
+			\phantom{aaaaaaaaa} 	% hack to have break between columns align with 
+								% break between first name and last name
+			& University of Washington 
+				& Padelford C-525,$\;$ 206.543.7986\\
+ 			& Department of Mathematics
+				& \url{bviray@uw.edu}\\
+ 			& Box 354350
+                & \texttt{www.math.washington.edu/$\sim$bviray}\\
+			& Seattle, WA 98195, USA
+				& Last Updated: \today 
+		\end{tabular}
+	\end{center}
+	
+
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\sectionheading{Employment}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+		
+		\begin{date_section}
+
+            \yearrange{2021}{} Professor, University of Washington
+
+			\yearrange{2017}{2021} Associate Professor, University of Washington
+			
+			\yearrange{2014}{2017} Assistant Professor, University of Washington
+			
+			\yearrange{2010}{2014} Tamarkin Assistant Professor and
+				NSF Postdoctoral Fellow, Brown University
+			
+		\end{date_section}
+
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\sectionheading{Visiting Appointments}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+		\begin{date_section}
+
+			\yearmo{}{2023} Research member, MSRI
+
+			\yearrange{2021}{2022} Visiting associate professor, MIT
+			
+			\yearmo{}{2017}
+			Visiting Erskine Fellow,
+			University of Canterbury
+			
+			\yearmo{}{2012} 
+			Academic guest, 
+			Rational Points and Algebraic Cycles program, \\
+			Centre Interfacultaire Bernoulli, 
+			\'Ecole Polytechnique F\'ed\'erale de Lausanne (EPFL)
+
+			\yearmo{}{2012} 
+			Postdoctoral Fellow, 
+			Complex and Arithmetic Dynamics program, \\
+			Institute for Computational and Experimental Research Mathematics 
+			(ICERM)
+
+			\yearmo{}{2009} Intern, Microsoft Research, 
+				Cryptography group
+			
+			\yearmo{}{2008} Center for Communications Research, 
+					La Jolla, CA
+			
+		\end{date_section}
+	
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\sectionheading{Education}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	
+		\begin{date_section}
+	
+			\yearmo{}{2010}%{May}
+			  Ph.D. Mathematics, University of California, Berkeley (advisor: Bjorn Poonen)
+	
+			\yearmo{}{2005}%{May}  
+			B.S.\phantom{A} Mathematics, University of Maryland, College Park, cum laude
+	
+		\end{date_section}
+	
+	% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	% \sectionheading{Research Interests}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	    
+    %     \vspace{1ex}
+    
+	% 	\noindent\hspace{17mm} Number theory, algebraic geometry, and 
+	% 	arithmetic dynamics
+	
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\sectionheading{Awards and grants}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	
+		\begin{date_section}
+		\yearrange{2024}{2027} NSF-DMS Grant \#2401327, \$260,000
+			\yearrange{2022}{2026} Craig McKibben and Sarah Merner Endowed Professor of Mathematics
+            \yearmo{}{2022} AMS Joan and Joseph Birman Fellow
+            \yearmo{}{2022} AWM Fellow
+            \yearrange{2021}{2024} NSF-DMS Grant \#2101434, \$307,257
+			\yearmo{}{2021} Fellow of the AMS
+			\yearrange{2021}{2022} Simons Fellowship 
+			\yearrange{2016}{2021} NSF-DMS CAREER Grant \#1553459, \$449,992
+			\yearmo{}{2020} International Visitor, Sydney Math Research Inst. (cancelled due to COVID-19)
+			\yearrange{2015}{2017}
+					NSA Young Investigator Grant, \$40,000.00 (awarded 2014, terminated early in 2016)
+			\yearrange{2010}{2014}
+				NSF Postdoctoral Fellowship
+			\yearrange{2009}{2010}
+				Ford Foundation Dissertation Fellowship
+			\yearrange{2007}{2008}
+				Mentored Research Award, University of California, Berkeley
+			% \yearmo{}{2007}
+			% 	Honorable Mention, NSF Graduate Research Fellowship Program
+			% \yearmo{}{2005}
+			% 	Honorable Mention, NSF Graduate Research Fellowship Program
+			% \dates{2004}
+			% 	Omicron Delta Kappa, leadership and scholarship fraternity
+			% \dates{2004}
+			% 	Higgenbotham Award, University of Maryland, College Park
+	
+		\end{date_section}
+	
+	
+	\clearpage
+
+
+		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+		\sectionheading{Current and Upcoming Service and Leadership}\footnote{Full service record given at the end of the document}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	
+		\begin{date_section}
+			
+			\yearmo{}{}\textbf{\textsc{Conference Organizer}}
+			\yearmo{}{2026} Women in Numbers 7\\
+			Co-organizers: Alia Hamieh, Cathy Hsu, Beth Malmskog
+			\yearmo{}{2025} Summer Research Inst. in Algebraic Geometry,  Session on Varieties over global fields\\
+			Co-organizers: Jennifer Balakrishnan, Junyi Xie
+            \yearrange{2022}{}
+            Roots of Unity workshop series (held biannually)\\
+            Co-organizers: Christine Berkesch, Michelle Manes, Priyam Patel,  Candice Price
+			\yearmo{}{}\textbf{\textsc{Program/Scientific Committee}}
+            \yearrange{2022}{} Rational Points Conference
+			\yearmo{}{}\textbf{\textsc{Service to the community}}
+			\yearrange{2025}{} Co-organizer, Current Events Bulletin at the Joint Mathematics Meetings
+			\yearrange{2024}{} Editor, \textit{Bulletin of the AMS}
+			\yearrange{2024}{2027} AMS Prize Oversight Committee
+			\yearrange{2024}{2026} AMS Canvassing Committee
+
+\yearrange{2023}{2026} Vice President of the AMS
+\yearrange{2022}{2026} Executive Committee of AMS Council
+
+
+	\yearrange{2020}{2026} Member, AMS Policy Committee on Publications
+
+	\yearrange{2018}{} Series editor, \textit{Algorithms and Computation in Mathematics}
+
+	\yearrange{2015}{}
+	Member, Women in Numbers (WIN) Steering Committee
+
+	\yearrange{2012}{}
+	Board of directors, Girls' Angle: a math club for girls, see \texttt{girlsangle.org}
+
+\yearrange{2011}{}
+	Advisory board, Girls' Angle
+
+
+	\yearmo{}{}\textbf{\textsc{Advising}}
+	\yearmo{}{}Mallory Dolorfino, Ph.D. (expected)
+	\yearmo{}{}Bryan Boehnke, Ph.D. (expected)
+	\yearmo{}{}Jasmine Camero, Ph.D., Emory University (expected)
+	\yearmo{}{}Alex Wang, Ph.D. (expected)
+	\yearmo{}{} Alex Galarraga, Ph.D. (expected)
+		\end{date_section}
+
+
+
+		
+
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\sectionheading{Lecture Series}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+		\begin{date_section}
+
+			\yearmo{}{2024}
+			Rational points: new dimensions, \textit{Algebraic points on curves} (4 lectures) 
+
+			\yearmo{}{2022}
+			PCMI, ``Number Theory 
+			Informed by Computation'' (3 lectures) 
+
+
+			\yearmo{}{2015}
+			Arizona Winter School, {\it Rational points on surfaces} (5 lectures)
+            % March 14-18, 2015
+		\end{date_section}
+
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\sectionheading{Public Lecture}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+		\begin{date_section}
+			\yearmo{}{2024}
+			Women in Math Nights, New York
+			University Abu Dhabi
+
+			\yearmo{}{2022}
+			Lahr Public Lecture, Dartmouth College
+		\end{date_section}
+
+	
+\clearpage
+
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\sectionheading{Selected Invited Conference Talks}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	
+		\begin{date_section}
+			\yearmo{}{2026} Fourth Journal of Number Theory Biennial Conference, Cetraro, Italy
+			\yearmo{}{} The Ninth Mini Symposium of the Roman Number Theory Association
+			\yearmo{}{2025} Algebraic points on curves, ICERM
+
+			\yearmo{}{2024}
+			Joint Meeting of the NZMS, AustMS and AMS, special session on Arithmetic Geometry and Number Theory 
+			\yearmo{}{}
+			Birational Geometry and Number Theory, ICMS, Edinburgh 
+			\yearmo{}{}
+			The Mordell Conjecture 100 years later, MIT
+
+
+			\yearmo{}{2023}
+			Connections Workshop: Diophantine Geometry, MSRI/SLMath
+
+			\yearmo{}{}
+			AMS Joint Mathematical Meetings, Boston, MA,\\
+			AMS Special Session on Arithmetic Geometry Informed by Computation
+
+			\yearmo{}{2022}
+			Pacific Rim Mathematical Association (PRIMA) Congress, Vancouver, Canada\\
+			Special session on Algebraic number theory and arithmetic geometry
+
+			\yearmo{}{}
+			Explicit Methods for Modularity, Simons Collaboration
+
+			\yearmo{}{}
+			Rational Points 2022, Franken-Akademie Schloss Schney
+			%March 30, 2022
+
+			\yearmo{}{2020} Connecticut Summer School in Number Theory, University of Connecticut
+			%June 12, 2020
+
+			\yearmo{}{}
+			AMS/MAA Joint Mathematical Meetings, Denver CO,\\
+			Special Session on ``Rational Points on Varieties: Theory and Computation''
+
+			% \yearmo{}{}
+			% AMS/MAA Joint Mathematical Meetings, Denver CO,\\
+			% Special Session on ``Explicit Methods in Arithmetic Geometry in Characteristic p''
+
+			\yearmo{}{2019}
+			RIMS Symposia: Rational Points on Higher Dimensional Varieties
+
+			% \yearmo{}{}
+			% Modular Forms, Arithmetic, and Women in Mathematics, Emory University
+			% % Nov 2, 2019
+
+			% \yearmo{}{}
+			% Southern California Number Theory Days, University of California, Irvine
+			% October 12, 2019
+
+			\yearmo{}{}
+            %The Heilbronn Institute for Mathematical Research, 
+			Heilbronn Annual Conference, University of Bristol 
+			% September 13, 2019
+
+			% \yearmo{}{}
+			% Rational Points on Irrational Varieties, Institut Henri Poincar\'e (IHP)
+			%June 27, 2019
+
+			\yearmo{}{} 
+			Arithmetic, Geometry, Cryptography, and Coding Theory 17, 			CIRM, Luminy\\
+			\textit{Plenary speaker}
+			% June 13, 2019
+
+			% \yearmo{}{}
+			% Algebra and Number Theory Day, Johns Hopkins University \& University of Maryland
+			% April 11, 2019
+
+			% \yearmo{}{}
+			% Geometry and Arithmetic of Surfaces Workshop, University of Wisconsin, Madison
+			% % February 10-11, 2019
+
+			% \yearmo{}{}
+			% Simons Collaboration on Arithmetic Geometry, Number Theory, and Computation Annual Meeting, Simons Foundation
+            % %January 11, 2019
+
+			\yearmo{}{2018}
+			Arithmetic Geometry, Number Theory, and Computation, Massachusetts Institute of Technology
+			%August 21, 2018
+
+			\yearmo{}{}
+			Explicit Methods in Number Theory, Oberwolfach
+			%July 23, 2018
+
+			\yearmo{}{}
+			Classical Algebraic Geometry, Oberwolfach
+			%July 20, 2018
+            
+			\yearmo{}{2017}
+			SIAM conference on Applied Algebraic Geometry, Georgia Institute of Technology\\
+			\textit{Plenary speaker}
+			%August 2, 2017
+
+			% \yearmo{}{}
+			% Rational points 2017, Franken-Akademie Schloss Schney 
+			% July 7, 2017
+
+			% \yearmo{}{}
+			% Arithmetic aspects of explicit moduli problems, Banff International Research Station
+			% May 30, 2017
+
+			% \yearmo{}{}
+			% Emory conference on higher obstructions to rational points, Emory University
+			% May 17, 2017
+
+    		% \yearmo{}{}
+			% Arithmetic and moduli of K3 surfaces, University of Amsterdam
+			% January 31, 2017
+	
+			% \yearmo{}{2016}
+            % Rational subvarieties in positive characteristic, American Institute of Mathematics
+			% October 27, 2016
+                        
+            \yearmo{}{2016}
+			Twelfth Algorithmic Number Theory Symposium, University of Kaiserslautern\\
+			\textit{Plenary speaker}
+			% September 1, 2016
+			
+			% \yearmo{}{}
+			% % \emph{Uniform bounds on Brauer classes of certain K3 surfaces}
+			% AMS/MAA Joint Mathematical Meetings, Seattle WA, \\
+			% Special Session on ``Number Theory and Cryptography''
+			% % January 9, 2016
+	
+			\yearmo{}{2015}
+			% \emph{Obstructions to the Hasse principle on Enriques surface}
+			Palmetto Number Theory Series (PANTS), Clemson University
+            \\
+            			\textit{Plenary speaker}
+			% December 5, 2015
+			
+			% \yearmo{}{}
+			% \emph{Obstructions to the Hasse principle on Enriques surfaces}
+            % Arithmetic 2015: Silvermania, Brown University
+            % August 14, 2015
+            
+			% \yearmo{}{}
+			% % \emph{Brauer groups and arithmetic of del Pezzo surfaces}
+			% Graduate student bootcamp for 2015 Algebraic Geometry Summer Research Institute
+			% % July 9, 2015
+			
+			% \yearmo{}{}
+			% \emph{Arithmetic of Enriques surfaces}
+			% Rational Points 2015, Franken-Akademie Schloss Schney
+			% July 4, 2015
+			
+            \yearmo{}{}
+			% \emph{Reciprocity laws and rational points on varieties}
+			AMS Spring Western Sectional Meeting, University of Nevada, Las Vegas\\
+			\textit{Invited address}
+            % April 18, 2015
+            
+            % \yearmo{}{}
+			% \emph{Arithmetic intersection numbers and cryptography}
+            % Western Algebraic Geometry Symposium (WAGS), University of California, Davis
+	        % March 1, 2015
+            
+            % \yearmo{}{2014}
+            % % \emph{Unramified Brauer classes on cyclic covers of the projective plane}
+            % Algebraic geometry: New connections for recent PhDs, Seattle, WA
+            % % Aug 5, 2014
+    
+			% \yearmo{}{2013}%{Aug.}
+			% % \emph{2-torsion Brauer classes on surfaces with hyperelliptic fibrations}
+			% SIAM Conference on Applied Algebraic Geometry, Fort Collins CO,\\
+			% Special Session on ``Arithmetic Geometry''
+			% % Aug 1, 2013
+	
+			% \yearmo{}{2013}%{Jul.}
+			% % \emph{Transcendental Brauer elements}
+			% Rational Points 2013, Schloss Thurnau
+			% % July 25, 2013
+	
+			% \yearmo{}{}%{Jul.}
+			% % \emph{Denominators of Igusa class polynomials}
+			% Explicit Methods in Number Theory, Oberwolfach
+			% % July 18, 2013
+			
+			% \yearmo{}{}%{Jun.}
+			% % \emph{Failure of the local to global principle on degree 4 del Pezzo surfaces}
+			% Complex Dynamics and Related Areas, University of Illinois at Chicago
+			% % June 6, 2013
+	
+			% \yearmo{}{}%{May}
+			% % \emph{Two-torsion Brauer classes on double covers of ruled surfaces}
+			% Rational Points -- Geometric, Analytic and Explicit Approaches, University of Warwick
+			% % May 28, 2013
+	
+			% \yearmo{}{}%{Jan.}
+			% % \emph{Vertical Brauer elements and degree $4$ del Pezzo surfaces}
+			% AMS/MAA Joint Mathematical Meetings, San Diego CA,\\
+			% Special Session on ``The Brauer Group in Algebra and Geometry''
+			% % Jan. 11, 2013
+	
+			% \yearmo{}{2012}%{Sept.}
+			% % \emph{Vertical Brauer elements and degree $4$ del Pezzo surfaces}
+			% Cohomological Methods in Arithmetic Geometry, Universit\"at Z\"urich
+			% % Sept. 10, 2012
+			
+			% \yearmo{}{}%{Mar.}
+			% % \emph{Descent on elliptic surfaces and transcendental Brauer 
+			% % elements}
+			% Algebraic Geometry Northeastern Series (AGNES),
+			% University of Massachusetts, Amherst
+			% % Mar. 31, 2012
+	
+			% \yearmo{}{}%{Mar.}
+			% % \emph{Exceptional linear subvarieties for the $d^{th}$ power map}
+			% Global Arithmetic Dynamics, Institute for Computational and Experimental 
+			% Research Mathematics (ICERM)
+			
+			% Mar. 19, 2012
+	
+			% \yearmo{}{}%{Jan.}
+			% % \emph{Denominators of Igusa class polynomials via arithmetic
+			% % intersection theory}
+			% AMS/MAA Joint Mathematical Meetings, Boston MA, \\
+			% Special Session on ``Arithmetic Geometry''
+			% % Jan. 6, 2012
+	
+			% \yearmo{}{}%{Jan.}
+			% % \emph{On a uniform bound for the number of exceptional linear 
+			% % subvarieties in the dynamical Mordell--Lang conjecture}
+			% AMS/MAA Joint Mathematical Meetings, Boston MA, \\
+			% Special Session on ``Dynamical Systems in Algebraic and Arithmetic Geometry''
+			% % Jan. 4, 2012
+	
+			% \yearmo{}{2011}%{Nov.}
+			% % \emph{An arithmetic intersection formula for denominators of
+			% % Igusa class polynomials}
+			% Women in Numbers 2, Banff International Research Station
+			% % Nov. 9, 2011
+			
+			% \yearmo{}{}%{Oct.}
+			% % \emph{On a uniform bound for the number of exceptional linear
+			% % subvarieties in the dynamical Mordell--Lang conjecture}
+			% Maine-Qu\'ebec Number Theory Conference,
+			% University of Maine
+			% % Oct. 2, 2011
+			
+			% \yearmo{}{}%{Sept.}
+			% % \emph{Descent on elliptic surfaces and transcendental Brauer
+			% % elements}
+			% 40 Years \& Counting: AWM's Celebration of Women in Mathematics,
+			% Brown University
+			% % Sept. 17, 2011
+			
+			% \yearmo{}{}%{Jun.}
+			% % \emph{Descent on elliptic surfaces and transcendental Brauer
+			% % elements}
+			% Algebraische Zahlentheorie, Oberwolfach
+			% % June 23, 2011
+			
+			% \yearmo{}{}%{May}
+			% % \emph{Descent on elliptic surfaces and transcendental Brauer
+			% % elements}
+			% Ramification in Algebra and Geometry at Emory, 
+			% Emory University
+			
+			% % May 18, 2011
+			
+			% \yearmo{}{}%{Apr.}
+			% % \emph{Bounding denominators of Igusa class polynomials using
+			% % arithmetic intersection theory}
+			% Spring Eastern Sectional Meeting, College of the Holy Cross,\\
+			% {\small Special Session on ``Modular Forms, Elliptic Curves, L-functions, \& Number Theory''}
+			% % April 9, 2011
+			
+			% \yearmo{}{}%{Mar.}
+			% % \emph{Denominators of Igusa class polynomials via arithmetic
+			% % intersection theory}
+			% Arithmetic, Geometry, Cryptography, and Coding Theory 13,
+			% Centre International de Rencontres Math\'ematiques (CIRM, Luminy)
+			
+			% % March 15, 2011
+			
+			% \yearmo{}{2010}%{Oct.}
+			% % \emph{Descent on elliptic surfaces and transcendental Brauer
+			% % elements}
+			% Arithmetic of Surfaces,
+			% Lorentz Center
+			
+			% % October 29, 2010
+			
+			% \yearmo{}{}%{Oct.}
+			% % \emph{Igusa class polynomials, quartic CM fields, and arithmetic
+			% % intersection theory}
+			% Workshop on Elliptic Curve Cryptography,
+			% Microsoft Research
+			
+			% % October 20, 2010
+			
+			% \yearmo{}{}%{Jul.}
+			% % \emph{Insufficiency of the algebraic Brauer-Manin obstruction for
+			% % the Hasse principle on Enriques surfaces}
+			% Rational Points 3, 
+			% Schloss Thurnau
+			
+			% % July 9, 2010
+			
+			% \yearmo{}{}%{Apr.}
+			% % \emph{Constructing genus 2 curves for cryptography and
+			% % denominators of Igusa class polynomials}\\
+			% Computer Security and Cryptography,
+			% Centre de Recherches Math\'ematiques (CRM)
+			
+			% % April 15, 2010
+			
+			% \yearmo{}{2009}%{Nov.}
+			% % \emph{Failure of the Hasse principle for Enriques surfaces}\\
+			% AMS Fall Southeastern Sectional Meeting,
+			% Florida Atlantic University, \\
+			% Special Session on ``Arithmetic Geometry''
+			% % November 1, 2009
+			
+			% \yearmo{}{}%{Oct.}
+			% % \emph{Failure of the Hasse principle for Enriques surfaces}\\
+			% AMS Fall Eastern Sectional Meeting,
+			% Pennsylvania State University,\\
+			% Special Session on ``Function Fields and their Applications''
+			% % October 24, 2009
+			
+			% % \yearmo{}{Apr.}
+			% % 	% \emph{Failure of the Hasse principle for Enriques surfaces}\\
+			% % 	Hausdorff Institute, Diophantine Equations Workshop
+			% % 	%April 23, 2009
+			
+			% \yearmo{}{2008}%{Mar.}
+			% % \emph{Hilbert schemes of points in affine space}\\
+			% Cornell University, Macaulay 2 Conference
+			% % March 19 2008
+	
+		\end{date_section}
+	
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\sectionheading{Selected Colloquia and  Seminars}%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	
+		\begin{date_section}
+			\yearmo{}{2026} Simon Fraser University, Colloquium (planned)
+			\yearmo{}{2025} University of Rochester, Colloquium 
+			\yearmo{}{} University of Rochester, Number theory seminar 
+			\yearmo{}{} University of Illinois, Urbana-Champaign, Colloquium 
+			
+			\yearmo{}{} University of California, Irvine, Geometry/Topology Seminar
+			
+			\yearmo{}{} University of California, Berkeley, Colloquium
+		
+			\yearmo{}{2024}
+			Colloque des sciences math\'ematiques du Qu\'ebec, CSMQ 
+
+			\yearmo{}{}
+			Quebec-Vermont Number Theory Seminar 
+
+			\yearmo{}{}
+			Center for Communications Research, La Jolla, Colloquium 
+
+	\yearmo{}{2023}
+		University of Michigan, Colloquium 
+
+            \yearmo{}{2022}
+			Dartmouth College, Lahr Diversity Colloquium
+
+			\yearmo{}{}
+			Harvard/MIT  Algebraic geometry seminar
+
+            \yearmo{}{}
+			Harvard University, Number theory seminar
+
+            \yearmo{}{}
+			Rice University, Colloquium
+
+            \yearmo{}{}
+			Tufts University, Colloquium
+
+            \yearmo{}{2021}
+			Brown University, Algebra seminar
+
+			\yearmo{}{}
+			Massachusetts Institute of Technology, Number theory seminar
+
+			\yearmo{}{}
+            San Francisco State University, Algebra, Geometry, and Combinatorics Seminar
+
+            \yearmo{}{}
+                University of Georgia, Number theory seminar
+
+            \yearmo{}{}
+                VaNTAGe Seminar, A virtual math seminar on open conjectures in
+                number theory and arithmetic geometry
+                %Feb 23 2021
+
+            \yearmo{}{}
+                Ohio State University, Colloquium
+                % Feb 4 2021
+
+            \yearmo{}{}
+                University of Waterloo, Colloquium
+                % Feb 1, 2021
+
+            \yearmo{}{2020}
+                Mathematical Conversations at Home, Institute for Advanced Study
+            %Dec 2, 2020
+
+            \yearmo{}{} 
+                University of Pittsburgh, Colloquium
+                %Nov, 11, 2020
+
+
+            \yearmo{}{} 
+                Stony Brook University, Algebraic Geometry Seminar
+                %Nov, 11, 2020
+
+
+            \yearmo{}{} 
+                Zoom Algebraic Geometry Seminar
+                %Nov, 3, 2020
+
+			\yearmo{}{}
+				Number Theory Web Seminar
+				%Sept 10, 2020
+
+			\yearmo{}{}
+				Simon Fraser University, Quarantined Number Theory \& Algebraic Geometry Seminar
+				%July 16, 2020
+
+
+
+			\yearmo{}{}
+				University of Utah, AWM-RTG Colloquium
+				% Feb 27, 2020
+
+			% \yearmo{}{2019}
+			% 	Duke University, Number Theory Seminar
+			% 	% March 20, 2019
+				
+
+            \yearmo{}{2018}
+                Emory University,
+                Athens-Atlanta Joint Number Theory Seminar
+                % October 23, 2018
+
+            \yearmo{}{2017}
+                University of Oregon,
+                AWM Distinguished Speaker Series
+                % November 9, 2017
+
+            % \yearmo{}{}
+            %     New York University,
+            %     Algebraic geometry seminar
+            %     % October 24, 2017
+
+            \yearmo{}{}
+				University of Canterbury,
+				Colloquium
+				% March 16, 2017
+				
+			% \yearmo{}{}
+			% 	University of Wisconsin, Madison, 
+			% 	Number theory seminar
+			% 	% January 19, 2017
+
+			\yearmo{}{}
+				Vanderbilt University,
+				Colloquium
+				% January 10, 2017
+
+			
+			% \yearmo{}{2015}
+			% % \emph{Obstructions to the Hasse principle on Enriques surface}
+			% 	Stanford University,
+			% 	Number theory seminar
+			% 	% November 16, 2015
+			
+			% \yearmo{}{}
+			% % \emph{An arithmetic intersection formula for denominators of Igusa class polynomials}
+			% 	University of Washington, Abelian varieties multi-site PIMS seminar series
+			% % November 12, 2015
+				
+			% \yearmo{}{}
+			% % \emph{Obstructions to the Hasse principle on degree 4 del Pezzo surfaces }
+			% 	University of Chicago,
+			% 	Number theory seminar
+			% 	% May 5, 2015
+				
+			% \yearmo{}{}
+			% % \emph{An arithmetic intersection formula for denominators of Igusa class polynomials}
+			% 	Northwestern University,
+			% 	Number theory seminar
+			% 	% May 4, 2015
+				
+			\yearmo{}{2015}
+			% \emph{Arithmetic intersection numbers and cryptography}
+				University of Wisconsin, Madison,
+				Colloquium
+				%May 1, 2015
+				
+			\yearmo{}{}
+			% \emph{Arithmetic intersection numbers and cryptography}
+				Rice University,
+				Colloquium
+				% Apr. 23, 2015
+				
+            % \yearmo{}{}
+			% % \emph{Arithmetic of Enriques surfaces}
+            %     Bellingham Algebraic Geometry Seminar
+            %     % Apr. 4, 2015
+                
+			% \yearmo{}{}
+			% % \emph{Unramified Brauer classes on cyclic covers of the projective plane}
+			% 	Queen's University,
+			% 	Algebraic geometry seminar
+			% 	% Mar. 30, 2015
+			
+            % \yearmo{}{2014}
+            % % \emph{Unramified Brauer classes on cyclic covers of the projective plane}
+            %     University of Washington,
+            %     Algebra and algebraic geometry seminar
+            %     % Dec. 2, 2014
+			
+            % \yearmo{}{}
+            % % \emph{Obstructions to the Hasse principle on degree 4 del Pezzo surfaces}
+            %     University of Colorado, Boulder,
+            %     Number theory seminar
+            %     % Nov. 18, 2014
+
+            % \yearmo{}{}
+            % % \emph{The local to global principle for rational points}
+            %     University of Washington,
+            %     Current topics seminar
+            %     % Nov. 13, 2014
+				
+			% \yearmo{}{2014}
+			% % \emph{Obstructions to the Hasse principle on degree 4 del Pezzo surfaces}
+			% 	Simon Fraser University,
+			% 	Joint PIMS/SFU/UBC number theory seminar 
+			% 	% Sept. 11, 2014
+
+            % \yearmo{}{}
+            % % \emph{Unramified Brauer classes on cyclic covers of the projective plane}
+            %     Rutgers University,
+            %     Algebra seminar
+            %     %Mar. 26, 2014
+                
+			% \yearmo{}{}
+			% % \emph{The local to global principle for rational points}
+			% 	Cornell University, 
+			% 	Colloquium
+			% 	% Feb. 10, 2014
+
+			% \yearmo{}{}
+			% % \emph{The local to global principle for rational points}
+			% 	Lehman College, 
+			% 	Colloquium
+			% 	% Jan. 24, 2014
+
+			% \yearmo{}{}
+			% % \emph{The local to global principle for rational points}
+			% 	Boston College, 
+			% 	Colloquium
+			% 	% Jan. 16, 2014
+				
+			% \yearmo{}{}
+			% % \emph{The local to global principle for rational points}
+			% 	University of Washington, 
+			% 	Colloquium
+			% 	% Jan. 12, 2014
+
+			% \yearmo{}{}
+			% % \emph{The local to global principle for rational points}
+			% 	Georgia Institute of Technology, 
+			% 	Colloquium
+			% 	% Jan. 9, 2014
+
+            % \yearmo{}{2013}
+            % % \emph{An arithmetic intersection formula for denominators of Igusa class polynomials}
+            %     University of Minnesota,
+            %     Lie groups seminar
+            %     % Dec. 6, 2013
+			
+			% \yearmo{}{2013}
+			% % \emph{The local to global principle for rational points}
+			% 	University of Minnesota, 
+			% 	Colloquium
+			% 	% Dec. 5, 2013
+	
+            % % \yearmo{}{}
+            % % % \emph{The local to global principle for rational points}
+            % %     University of Georgia,
+            % %     Number theory seminar
+            % %     % Nov. 6, 2013
+					
+			% \yearmo{}{}
+			% % \emph{Unramified Brauer classes on cyclic covers of the projective plane}
+			% 	Yale University,
+			% 	Algebraic and tropical geometry seminar
+			% 	%Oct. 10, 2013
+			
+			% \yearmo{}{}
+			% % \emph{Computing obstructions to the local-to-global principle on Enriques surfaces}
+			% 	University of Texas, Austin,
+			% 	Number theory seminar
+			% 	%Oct. 3, 2013
+			
+			% \yearmo{}{}
+			% % \emph{Computing obstructions to the local-to-global principle on Enriques surfaces}
+			% 	Boston College/MIT,
+			% 	Joint number theory seminar
+			% 	%Sept. 17, 2013
+	
+            % % \yearmo{}{}%{May}
+            % % % \emph{Two-torsion Brauer classes on double covers of ruled surfaces}
+            % %     University of Washington,
+            % %     Number theory seminar
+            % %     %May 14, 2013
+	
+            % % \yearmo{}{}%{Apr.}
+            % % % \emph{Failure of the local to global principle on surfaces obtained as the intersection of two quadrics}
+            % %     Wesleyan University,
+            % %     Algebra seminar
+            % %     %Apr. 26, 2013
+			
+            % % \yearmo{}{}%{Mar.}
+            % % % \emph{Reductions of CM j-invariants modulo p}
+            % %     Emory University,
+            % %     Algebra and number theory seminar
+            % %     %Mar. 27, 2013
+			
+			% \yearmo{}{}%{Mar.}
+			% % \emph{Using fibrations to study Brauer classes on surfaces}
+			% 	Columbia/CUNY/NYU, 
+			% 	Joint number theory seminar
+			% 	%Mar. 7, 2013
+	
+			% \yearmo{}{}%{Feb.}
+			% % \emph{Reductions of CM j-invariants modulo p}
+			% 	University of Michigan, 
+			% 	Group, Lie, and number theory seminar
+			% 	%Feb. 18, 2013
+	
+            % % \yearmo{}{}%{Feb.}
+            % % % \emph{Obstructions to the Hasse principle on degree 4 del Pezzo surfaces}
+            % %     Brown University,
+            % %     Algebra seminar
+            % %     %Feb. 11, 2013
+	
+			% \yearmo{}{2012}%{Nov.}
+			% % \emph{On singular moduli for arbitrary discriminants}
+			% 	Centre Interfacultaire Bernoulli, 
+			% 	Rational points and algebraic cycles seminar
+			% 	%Nov.. 8, 2012
+	
+			% \yearmo{}{}%{Oct.}
+			% % \emph{Vertical Brauer elements and degree $4$ del Pezzo surfaces}
+			% 	Oxford University, 
+			% 	Number theory seminar
+			% 	%Oct. 25, 2012
+	
+			% \yearmo{}{}%{Oct.}
+			% % \emph{Vertical Brauer elements and degree $4$ del Pezzo surfaces}
+			% 	University of Bristol, 
+			% 	Linfoot seminar
+			% 	%Oct. 24, 2012
+	
+			% \yearmo{}{}%{Oct.}
+			% % \emph{Vertical Brauer elements and degree $4$ del Pezzo surfaces}
+			% 	University of Warwick, 
+			% 	Number theory seminar
+			% 	%Oct. 22, 2012
+	
+			% \yearmo{}{}%{May}
+			% % \emph{Failure of the Hasse principle for Enriques surfaces}
+			% 	Center for Communications Research, Princeton, 
+			% 	Colloquium
+			% 	%May 7, 2012
+	
+			% \yearmo{}{}%{Apr.}
+			% % \emph{A strengthened Gross-Zagier formula for singular moduli}
+			% 	Harvard University, 
+			% 	Number theory seminar
+			% 	%Apr. 4, 2012
+	
+			% \yearmo{}{}%{Mar.}
+			% % \emph{Descent on elliptic surfaces and transcendental Brauer 
+			% % elements}
+			% 	California Institute of Technology, 
+			% 	Algebraic geometry seminar
+			% 	%Mar. 5, 2012
+	
+			% \yearmo{}{2011}%{Nov.}
+			% % \emph{On a uniform bound for the number of exceptional linear
+			% % subvarieties in the dynamical Mordell--Lang conjecture}
+			% 	Boston College,
+			% 	Number theory seminar
+			% 	%Nov. 29, 2011
+			%
+			%             % \yearmo{}{}%{Apr.}
+			%             % % \emph{Descent on elliptic surfaces and transcendental Brauer
+			%             % % elements}
+			%             %     Brown University,
+			%             %     Algebraic geometry seminar
+			%             %     %April 29, 2011
+			%
+			% \yearmo{}{}%{Apr.}
+			% % \emph{Descent on elliptic surfaces and transcendental Brauer
+			% % elements}
+			% 	University of Wisconsin, Madison,
+			% 	Number theory seminar
+			% 	%April 7, 2010
+			%
+			% \yearmo{}{}%{Apr.}
+			% % \emph{Descent on elliptic surfaces and transcendental Brauer
+			% % elements}
+			% 	Amherst College,
+			% 	Five college number theory seminar
+			% 	%April 5, 2011
+			%
+			% \yearmo{}{}%{Mar.}
+			% % \emph{Failure of the Hasse principle for Enriques surfaces}
+			% 	\'Ecole normale sup\'erieure/Universit\'e Paris-Sud,
+			% 	Vari\'et\'es rationnelles
+			% 	%March 11, 2011
+	
+            % \yearmo{}{2010}%{Nov.}
+            % % \emph{Descent on elliptic surfaces and transcendental Brauer
+            % % elements}
+            %     Boston University,
+            %     Algebra seminar
+            %     %November 15, 2010
+	
+            % \yearmo{}{}%{Nov.}
+            % % \emph{Enriques surfaces that fail to satisfy the local-to-global
+            % % principle}
+            %     University of Connecticut,
+            %     Algebra seminar
+            %     %November 2, 2010
+            %
+            % \yearmo{}{}%{Mar.}
+            % % \emph{Failure of the Hasse principle for Enriques surfaces}\\
+            %      Rice University,
+            %     Algebraic geometry seminar
+            %      %March 30, 2010
+            %
+            % \yearmo{}{}%{Feb.}
+            % % \emph{Failure of the Hasse principle for Enriques surfaces}\\
+            %      Stanford University,
+            %     Number theory seminar
+            %      %February 5, 2010
+	
+            % \yearmo{}{2009}%{Dec.}
+            % % \emph{Failure of the Hasse principle for Enriques surfaces}\\
+            %      University of Michigan,
+            %     Algebraic geometry seminar
+            %      %December 16, 2009
+	
+            % \yearmo{}{}%{Nov.}
+            % % \emph{Failure of the Hasse principle for Enriques surfaces}\\
+            %      New York University,
+            %     Number theory seminar
+            %      %November 19, 2009
+	
+            % \yearmo{}{}%{Nov.}
+            % % \emph{Failure of the Hasse principle for Enriques surfaces}\\
+            %     Brown University,
+            %     Algebra seminar
+            %     %November 16, 2009
+	
+            % \yearmo{}{}%{Nov.}
+            % % \emph{Failure of the Hasse principle for Enriques surfaces}\\
+            %     Harvard University,
+            %     Number theory seminar
+            %     %November 11, 2009
+	
+            % \yearmo{}{}%{Nov.}
+            %     % \emph{Igusa class polynomials, the embedding problem, and
+            %     % arithmetic intersection theory}\\
+            %     Massachusetts Institute of Technology,
+            %     Number theory seminar
+            %     %November 9, 2009
+	
+            % \yearmo{}{}%{Oct.}
+            %     % \emph{Existence of rational points on varieties}\\
+            %     University of California, Berkeley,
+            %     Graduate student colloquium
+            %     %October 2, 2009
+	
+            % \yearmo{}{}%{Aug.}
+            %     % \emph{Constructing genus $2$ curves for cryptography}\\
+            %     Microsoft Research,
+            %     End-of-internship talk
+            %     %August 12, 2009
+	
+            % \yearmo{}{}%{Feb.}
+            %     % \emph{Failure of the Hasse principle for Enriques surfaces}\\
+            %     University of California, Berkeley,
+            %     Number theory seminar
+            %     %February 4, 2009
+	
+            % \yearmo{}{2008}%{June}
+            %     % \emph{Hilbert schemes of $8$ points}\\
+            %     University of Warwick,
+            %     Algebraic geometry seminar
+            %     %June 11 2008
+	
+            % \yearmo{}{}%{Apr.}
+            %     % \emph{Existence of rational points on
+            %     % smooth projective varieties}\\
+            %     University of Maryland College Park,
+            %     Algebra and number theory seminar
+            %     %April 28, 2008
+	
+			% \yearmo{2007}{Oct.}
+			% 	% \emph{The Hilbert scheme of 8 points in 4 space.}\\
+			% 	Harvard/MIT, Baby Algebraic Geometry Seminar
+			% 	%Tuesday 30 October 2007
+	
+		\end{date_section}
+
+
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\sectionheading{Publications}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+		
+		% \vspace{-2ex}
+	
+		\begin{enumerate}[itemsep=-1mm, leftmargin=24mm]
+		
+ 			
+\item   Quartic del Pezzo surfaces without quadratic points (with Brendan Creutz). \textit{Pacific J. Math.} \textbf{337} (2025), no. 2, 215–224.
+ 
+			\item Degrees of points on varieties over Henselian fields (with Brendan Creutz). \textit{Trans. Amer. Math. Soc.} \textbf{378} (2025), no. 1, 259--278.
+
+			\item Brauer-Manin obstructions requiring arbitrarily many Brauer classes (with Jennifer
+Berg, Carlo Pagano, Bjorn Poonen, Michael Stoll, Nicholas Triantafillou, and Isabel Vogt). \textit{Bull. Lond. Math. Soc.} \textbf{56} (2024), no. 5, 1587–1604.
+		
+			\item Curve classes on conic bundle threefolds and applications to rationality
+(with Sarah Frei, Lena Ji, Soumya Sankar, and Isabel Vogt).  \textit{Algebr. Geom.} \textbf{11} (2024), no. 3, 421–459.
+    
+    
+		
+		        \item Quadratic points on intersections of quadrics. (with Brendan Creutz). \textit{Algebra Number Theory} \textbf{17} (2023), no. 8, 1411–1452.            
+
+
+ 	\item Persistence of the Brauer-Manin obstruction on cubic surfaces. (with Carlos Rivera).  \textit{Math. Res. Letters} \textbf{29} (2022), no. 6, 1881–1889.               
+
+             \item {Corrigendum: Abelian n-division fields of elliptic curves and Brauer groups of product Kummer and abelian surfaces} (with Anthony V\'arilly-Alvarado). \textit{Forum Math. Sigma} \textbf{8} (2020), Paper No. e60, 4 pp.
+			
+			\item {On the level of modular curves that give rise to isolated j-invariants} (with Abbey Bourdon, \"Ozlem Ejder, Yuan Liu, and Frances Odumodu).  \textit{Advances in Mathematics} \textbf{357} (2019).
+			
+			\item {Degree and the Brauer-Manin obstruction}
+            (with Brendan Creutz and an appendix by Alexei N. Skorobogatov).  \textit{Algebra Number Theory} \textbf{12} (2018), no. 10, 2445-2470.
+            
+			\item The $d$-primary Brauer-Manin obstruction for curves (with Brendan Creutz and Jos\'e Felipe Voloch). \textit{Research in Number Theory} \textbf{4} (2018), no. 2, Article 26, 16 pp.
+			
+			\item
+			{Abelian $n$-division fields of elliptic curves and Brauer groups of product Kummer and abelian surfaces}
+			(with Anthony V\'arilly-Alvarado).  \textit{Forum of Mathematics. Sigma} \textbf{5} (2017), e29, 42 pp. 
+			doi:10.1017/fms.2017.16
+
+ 			\item
+			{Unramified Brauer classes on cyclic covers of the projective plane} (with Colin Ingalls, Andrew Obus, and Ekin Ozman and an appendix by Hugh Thomas). \textit{Proceedings of Brauer groups and obstruction problems: moduli spaces and arithmetic}, 115--153, Progress in Mathematics, 320, \textit{Springer, [Basel],} 2017.   
+
+			\item
+				{Insufficiency of the Brauer-Manin obstruction for Enriques 
+				surfaces}
+				(with Francesca Balestrieri, Jennifer Berg, Michelle Manes \&
+					Jennifer Park).  \textit{Directions in Number Theory: Proceedings of the 2014 WIN3 Workshop}, Association for Women in Mathematics Series, vol. 3, \textit{Springer, [Cham],} 2016, pp. 1--31.
+
+			\item
+			{Evidence for the dynamical Brauer-Manin criterion}
+			(with Ekaterina Amerik, P\"ar Kurlberg, Khoa Nguyen, Adam Towsley, 
+			and Jos\'e Felipe Voloch). \textit{Experimental Mathematics} \textbf{25} (2016), no. 1, 54--65. doi:10.1080/10586458.2015.1056889
+
+			\item
+			{On Brauer groups of double covers of ruled surfaces}
+			(with Brendan Creutz).\\ \textit{Mathematische Annalen} \textbf{362} (2015), no. 3, 1169--1200. doi: 10.1007/s00208-014-1153-0
+            
+			\item
+			{On singular moduli for arbitrary discriminants}
+			(with Kristin Lauter). \textit{International Mathematics Research Notices}, (2015), no. 19, 9206--9250.
+             doi: 10.1093/imrn/rnu223
+
+			\item
+			{Denominators of Igusa class polynomials}
+			(with Kristin Lauter). \textit{Num\'ero consacr\'e au trimestre ``M\'ethodes arithm\'etiques
+	     et applications'', automne 2013.  Publications Math\'ematiques de Besan\c{c}on. Alg\`ebre et Th\'eorie des Nombres. 2014/2} Presses Univ. Franche-Comt\'e, Besan\c{c}on, 2015, pp. 5--29.
+
+			\item
+			{Smooth compactifications of certain normic bundles}
+			(with Anthony V\'arilly-Alvarado). 
+			\textit{European Journal of Mathematics} \textbf{1} (2015), no. 2, 
+			250--259. doi: 10.1007/s40879-015-0035-7
+            
+			\item
+			{An arithmetic intersection theory formula for denominators of Igusa
+			class polynomials}
+			(with Kristin Lauter). \textit{American Journal of Mathematics}
+             \textbf{137} (2015), no. 2, 497--533.  doi: 10.1353/ajm.2015.0010
+            
+			\item
+			{Two torsion in the Brauer group of a hyperelliptic curve}
+			(with Brendan Creutz).
+            \textit{Manuscripta Mathematica} \textbf{147} (2015), no. 1-2, 
+            139--167. doi: 10.1007/s00229-014-0721-7
+			
+			\item
+			{Corrigendum: Higher dimensional analogs of Ch\^atelet surfaces}
+			(with Anthony V\'arilly-Alvarado). \textit{Bulletin of the London Mathematical Society} \textbf{47} (2015), no. 2, 217--218.
+
+			\item
+			{Computing conjugating sets and automorphism groups of rational functions}
+			(with Xander Faber and Michelle Manes).  
+			\textit{Journal of Algebra} \textbf{423} (2014), 1161--1190.\\
+            doi: 10.1016/j.jalgebra.2014.08.048
+
+			\item 
+			{Arithmetic of del Pezzo surfaces of degree $4$ and vertical Brauer 
+			groups}\\ (with Anthony V\'arilly-Alvarado). 
+			\textit{Advances in Mathematics} \textbf{255} (2014), 153--181. 
+            doi: 10.1016/j.aim.2014.01.004
+
+			\item
+			{On a uniform bound for the number of exceptional linear 
+			subvarieties in the Mordell-Lang conjecture}
+			(with Joseph H. Silverman).
+			\textit{Mathematical Research Letters}
+			\textbf{20} (2013),  no. 3,  547--566. 
+            doi: 10.4310/MRL.2013.v20.n3.a12
+
+			\item
+			{Comparing arithmetic intersection theory formulas for denominators 
+			of Igusa class polynomials}
+			(with Jacqueline Anderson, Jennifer S. Balakrishnan, Kristin 
+			Lauter, and Jennifer Park).
+			\textit{Women in Numbers 2: Research Directions in Number Theory}, 
+			Contemporary Mathematics, vol. 606, Amer. Math. Soc., 
+			Providence, RI, 2013, pp. 65--82.
+
+			\item
+			{Failure of the Hasse principle for Ch\^atelet surfaces in
+			characteristic $2$}. 
+			\textit{Journal de Th\'eorie des Nombres de Bordeaux}
+			\textbf{24} (2012), no. 1, 231--236.
+             doi: 10.5802/jtnb.794 
+	
+			\item
+			{Higher-dimensional analogs of Ch\^atelet surfaces}
+			(with Anthony V\'arilly-Alvarado). \\
+			\textit{Bulletin of the London Mathematical Society} 
+			\textbf{44} (2012), no. 1, 125--135.\\
+            doi: 10.1112/blms/bdr075
+	
+			\item
+			{Failure of the Hasse principle for Enriques surfaces}.
+			(with Anthony V\'arilly-Alvarado).  \\
+			\textit{Advances in Mathematics} 
+			\textbf{226} (2011), no. 6, 4884--4901.
+            doi: 10.1016/j.aim.2010.12.020
+	
+			\item
+			{Igusa class polynomials, embeddings of quartic CM fields, 
+			and arithmetic intersection theory} 
+			(with Helen Grundman, Jennifer Johnson-Leung, Kristin Lauter, 
+			Adriana Salerno, and Erika Wittenborn). 
+			\textit{WIN---Women in Numbers}, Fields Institute 
+			Communications, vol. 60, Amer. Math. Soc., Providence, RI, 
+			2011, pp. 35--60.
+	
+			\item
+			{A family of varieties with exactly one pointless 
+			rational fiber}.
+			\textit{Journal de Th\'eorie des Nombres de Bordeaux}
+			\textbf{22} (2010), no. 3, 741--745.
+            doi: 10.5802/jtnb.743 
+			
+			\item
+			{Hilbert schemes of $8$ points}
+			(with Dustin A. Cartwright, Daniel Erman, and Mauricio Velasco). 
+			\textit{Algebra and Number Theory} \textbf{3} (2009), no. 7,
+			763--795. \\
+            doi: 10.2140/ant.2009.3.763
+				
+		\end{enumerate}
+	
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \sectionheading{Accepted for Publication}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    
+        \vspace{-1ex}
+    
+        \begin{enumerate}[resume, itemsep=-1mm,  leftmargin=24mm]
+			\item 
+Rational points on varieties and the Brauer-Manin obstruction. \texttt{arXiv:2303.17796}, 19 pages. To appear in \textit{IAS/Park City Mathematics Series}
+
+\item Isolated and parameterized points on curves (with Isabel Vogt).
+\texttt{arXiv:2406.14353}, 26 pages. To appear in \textit{Essential Number Theory}
+    
+         \end{enumerate}
+	
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\sectionheading{Submitted for Publication}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+		\vspace{-1ex}
+
+		\begin{enumerate}[resume, itemsep=-1mm,leftmargin=24mm]
+
+
+\item Conic bundle threefolds differing by a constant Brauer class and connections to rationality (with Sarah Frei, Lena Ji, Soumya Sankar, and Isabel Vogt). \texttt{arXiv:2406.13510}, 18 pages.
+
+
+
+
+         \item Number fields generated by points in linear systems on curves (with Irmak Bal\,{c}ik, Stephanie Chan, and Yuan Liu). \texttt{arxiv:2503.07846}, 24 pages.
+        \end{enumerate}
+
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\sectionheading{Books edited}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+		\vspace{-.5ex}
+
+		\begin{enumerate}[resume, itemsep=-1mm,leftmargin=24mm]
+
+			\item
+			Brauer groups \& obstruction problems: moduli spaces and arithmetic.  Edited with Asher Auel, Brendan Hassett, and Anthony V\'arilly-Alvarado.  \textit{Progress in Mathematics, 320} Birkh\"auser/Springer, Basel.  vi + 247 pp.
+	
+
+\end{enumerate}
+
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\sectionheading{Other articles}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+		\vspace{-.5ex}
+
+		\begin{enumerate}[resume, itemsep=-1mm,leftmargin=24mm]
+
+        \item
+        The value of mathematical storytelling: our perspective on giving talks (with John Voight).  \textit{Notices Amer. Math. Soc.}, \textbf{70} (2023), no. 6, 928-931.
+        			
+		 \end{enumerate}
+
+
+
+
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\sectionheading{Teaching}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	
+		\begin{date_section}
+			\yearmo{}{}\textbf{\textsc{University of Washington}}, Professor
+			\yearmo{}{2026}%spring
+			Math 404: Introduction to Modern Algebra III
+			\yearmo{}{2025}%autumn
+			Math 208: Linear algebra (2 sections)
+			\yearmo{}{}%spring
+			Math 208: Linear algebra (2 sections)
+			\yearmo{}{2024}%autumn
+			Math 581E: Algebraic points on curves
+			\yearmo{}{}%spring
+			Math 208: Linear algebra (2 sections)
+			\yearmo{}{2023}%autumn
+			Math 402: Introduction to Modern Algebra I
+			\yearmo{}{2022}%autumn
+			Math 504: Modern Algebra I
+            \yearmo{}{2021}%spring
+            Math 301: Elementary Number Theory
+        \yearmo{}{}%winter
+            Math 300: Introduction to Mathematical Reasoning (2 sections)
+			\yearmo{}{2020}%{autumn}
+				Math 308: Matrix Algebra
+			\yearmo{}{}%{spring}
+				Math 583: Communicating Mathematics Effectively
+			\yearmo{}{}%{spring}
+				Math 404: Introduction to Modern Algebra III 
+			\yearmo{}{}%{winter}
+				Math 403: Introduction to Modern Algebra II 
+			\yearmo{}{2019}%{spring}
+        Math 308: Matrix Algebra 
+			\yearmo{}{}%{spring}
+				Math 480: Cryptography
+			\yearmo{}{2018}%{Autumn}
+                Math 308: Matrix Algebra (2 sections)
+			\yearmo{}{2017}%{Autumn}
+				Math 581: Algebraic Number Theory
+			\yearmo{}{}%{Autumn}
+				Math 308: Matrix Algebra
+			\yearmo{}{}%{Spring}
+				Math 480: Cryptography
+			\yearmo{}{2016}%{Fall}
+                Math 402: Introduction to Modern Algebra I
+			\yearmo{}{}%{Winter}
+                Math 582: Class Field Theory
+			\yearmo{}{2015}%{Autumn}
+					Math 581: Algebraic Number Theory
+			\yearmo{}{}
+					Math 124: Calculus with Analytic Geometry I
+			\yearmo{}{}%{Winter}
+				Math 403: Introduction to Modern Algebra II
+			\yearmo{}{2014}%{Fall}
+					Math 402: Introduction to Modern Algebra I
+			\yearmo{}{}
+					Math 308: Matrix Algebra
+            
+			\yearmo{}{}\textbf{\textsc{University of Washington}}, Reading courses and research groups
+			\yearmo{}{2019}%Autumn 
+				Algebraic Number Theory (2 students)
+			\yearmo{}{}%Spring
+				WXML group on embeddings of genus 0 curves (2 students)
+			\yearmo{}{2018}%Autumn
+					Elementary Number Theory (1 students)
+			\yearmo{}{}%Summer
+					Algebraic Number Theory (3 students)
+			\yearmo{}{2017}%Autumn
+				Arithmetic of elliptic curves (1 student)
+			\yearmo{}{2016}%Winter
+					Arithmetic geometry (3 students)
+			\yearmo{}{2015}%Winter
+					Rational points on varieties (2 students)
+			\yearmo{}{}%Winter
+					Algebraic geometry, joint with Max Lieblich (2 students)
+			\yearmo{}{2014}%Fall
+					Algebraic geometry, joint with Max Lieblich (4 students)
+
+			\yearmo{}{}\textbf{\textsc{Brown University}}, Professor
+			\yearmo{}{2013}%{Fall}
+				Math \phantom{0}19: Advanced Placement Calculus (Physics/Eng.)
+				\textit{Course head}
+			\yearmo{}{}%{2013}{Fall}
+				Math 158: Cryptography
+			\yearmo{}{}%{2013}{Spr.}
+				Math 156: Number Theory
+			\yearmo{}{2011}%{Fall}
+				Math 153: Abstract Algebra I
+			\yearmo{}{}%{2011}{Fall}
+				Math \phantom{0}52: Linear Algebra
+			\yearmo{}{}\textbf{\textsc{UC Berkeley}}, Teaching assistant
+			\yearmo{}{2008}%{Fall}
+				Math 16b: Analytical Geometry \& Calculus II
+			\yearmo{}{2007}%{Spr.}
+				Math 110: Advanced Linear Algebra
+			\yearmo{}{2006}%{Fall}
+				Math \phantom{0}53: Multivariable Calculus
+			\yearmo{}{}%{2006}{Spr.}
+				Math \phantom{0}54: Linear Algebra \& Differential Equations
+			\yearmo{}{2005}%{Fall}
+				Math \phantom{0}1b: Calculus II
+			\yearmo{}{}\textbf{\textsc{University of Maryland, College Park}}, Strauss teaching assistant
+			\yearmo{}{2005}%{Spr.}
+				Math 141: Calculus II
+			\yearmo{}{2004}%{Fall}
+				Math 140: Calculus I
+	
+		\end{date_section}
+	
+	 \clearpage
+		
+		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+		\sectionheading{Conference Leadership}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	
+		\begin{date_section}
+			
+			\yearmo{}{}\textbf{\textsc{Organizer}}
+			\yearmo{}{2026} Women in Numbers 7\\
+			Co-organizers: Alia Hamieh, Cathy Hsu, and Beth Malmskog
+			\yearmo{}{2025} Summer Research Inst. in Algebraic Geometry,  Session on Varieties over global fields\\
+			Co-organizers: Jennifer Balakrishnan and Junyi Xie
+			\yearmo{}{2024} AIM workshop: Degree $d$ points on surfaces\\
+			Co-organizer: Nathan Chen
+			\yearmo{}{2022} Pacific Rim Mathematical Association (PRIMA) Conference Special Session ``Arithmetic geometry: theory and computation''\\
+			Co-organizer: Sho Tanimoto 
+            \yearrange{2022}{}
+            Roots of Unity workshop series (held biannually)\\
+            Co-organizers: Christine Berkesch, Michelle Manes, Priyam Patel, Candice Price, and Adriana Salerno
+            \yearrange{2020}{2022}
+            paraDIGMS: Diversity in Graduate Mathematical Sciences Fall and Spring Conferences\\
+                Co-organizers: Matthew Ando, Justin Lanier, Marissa Loving
+            \yearmo{}{2020}
+            Western Algebraic Geometry Symposium\\
+                Co-organizers: Jarod Alper, Edray Goins, Dagan Karp
+			\yearmo{}{}%{Sept.}
+            Modern Breakthroughs in Diophantine Problems, BIRS\\
+            Co-organizers: Michael Bennett, Nils Bruin, Samir Siksek
+            \yearmo{}{}%{Jun.}
+            Foundations of Computational Mathematics, Computational Number Theory Session\\
+            Co-organizers: Nils Bruin \& Christophe Ritzenthaler (Cancelled due to COVID-19)
+			\yearmo{}{2019}%{Jan.}
+			CFW: Derived Algebraic Geometry, Birational Geometry and Moduli Spaces\\
+			Co-organizers: Julie Bergner, Antonella Grassi, Kirsten Wickelgren 
+			\yearmo{}{2018}%{Jun.}
+					Communicating Mathematics Effectively\\
+					Co-organizer: John Voight
+			\yearmo{}{2017}%{Aug.}
+				Women in Numbers 4\\
+                Co-organizers: Jennifer Balakrishnan, Chantal David, Michelle Manes
+			\yearmo{}{2015}%{Feb.}
+				AMS Spring Western Sectional Meeting: Special session on ``Arithmetic geometry''\\
+				Co-organizer: Katherine Stange
+			\yearmo{}{2013}%{Feb.}
+				AIM workshop: 
+					``Brauer groups \& obstruction problems: 
+						moduli spaces and arithmetic''\\
+				Co-organizers: Asher Auel, Brendan Hassett, and Anthony V\'arilly-Alvarado
+			\yearmo{}{}%{2013}{Jan.}
+				AMS/MAA Joint Mathematics Meetings: AWM special session on number theory\\
+				Co-organizer: Kristin Lauter 
+			\yearmo{}{2012}%{Jan.}
+				Joint Mathematics Meetings: special session on 
+				``Rational points on varieties''\\
+				Co-organizers: Jennifer S. Balakrishnan, Bjorn Poonen, and Kirsten Wickelgren
+	
+			\yearmo{}{}\textbf{\textsc{Program/Scientific Committee}}
+			\yearmo{}{2024} Algorithmic Number Theory Symposium (ANTS XVI)
+            \yearrange{2022}{} Rational Points Conference
+			\yearmo{}{2012}%{Jul.}
+				Tenth Algorithmic Number Theory Symposium (ANTS X)
+
+			\yearmo{}{}\textbf{\textsc{Project Leader}}
+			\yearmo{}{2026}%{Apr.}
+				Women in Numbers 7; 
+				Co-leader: Yuan Liu
+			\yearmo{}{2023}%{Apr.}
+				Women in Numbers 6; 
+				Co-leader: Yuan Liu
+			\yearmo{}{2020}%{Jul.}
+				Women in Algebraic Geometry; 
+				Co-leader: Isabel Vogt
+			\yearmo{}{2017}%{Apr.}
+				Women in Numbers 4; 
+				Co-leader: Abbey Bourdon
+			\yearmo{}{2015}
+				Graduate student bootcamp, Algebraic Geometry Summer Research Institute
+			\yearmo{}{}
+				Arizona Winter School
+			\yearmo{}{2014}%{Apr.}
+				Women in Numbers 3; 
+				Co-leader: Michelle Manes
+			\yearmo{}{2011}%{Nov.}
+				Women in Numbers 2;
+				Co-leader: Kristin Lauter
+	
+		\end{date_section}
+
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\sectionheading{Service to the community}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+	\begin{date_section}
+	        			\yearmo{}{}\textbf{\textsc{Ongoing Service}}
+				\yearrange{2025}{} Co-organizer, Current Events Bulletin at the Joint Mathematics Meetings
+				\yearrange{2024}{} Editor, \textit{Bulletin of the AMS}
+				\yearrange{2024}{2027} AMS Prize Oversight Committee
+				
+	\yearrange{2023}{2026} Vice President of the AMS
+	\yearrange{2022}{2026} Executive Committee of AMS Council
+
+        \yearrange{2020}{2026} Member, AMS Policy Committee on Publications
+
+        \yearrange{2018}{} Series editor, \textit{Algorithms and Computation in Mathematics}
+
+
+        \yearrange{2015}{}
+        Member, Women in Numbers (WIN) Steering Committee
+
+        \yearrange{2012}{}
+        Board of directors, Girls' Angle: a math club for girls, see \texttt{girlsangle.org}
+
+    \yearrange{2011}{}
+        Advisory board, Girls' Angle
+        			\yearmo{}{}\textbf{\textsc{Past Service}}
+        \yearrange{2018}{2025} Editor, \textit{Research in Number Theory}
+						\yearrange{2024}{2025} AMS Canvassing Committee  (chair)
+			\yearrange{2024}{2025} Nominating committee of the ECBT
+			\yearrange{2023}{2025} AMS Long Range Planning Committee
+
+                \yearrange{2021}{2023} Chair, MSRI Summer Research in Mathematics Selection Committee
+                        \yearrange{2020}{2023} Member-at-large, AMS Council
+        \yearrange{2021}{2022} Member, AMS Committee on Committees
+        \yearrange{2021}{2022} Mentor, BAMM: Bolstering the Advancement
+        of Masters in Mathematics, Math Alliance (1 student)
+                \yearrange{2018}{2021} Member, AMS-Simons Travel Grants Committee
+
+        \yearrange{2015}{2021} Chair, Western Algebraic Geometry Symposium (WAGS) Diversity Committee
+
+
+        \yearrange{2015}{2021}
+        Member, Western Algebraic Geometry Symposium (WAGS) Council 
+
+
+                \yearmo{}{2020} Co-organizer, \textit{Tea time with a number theorist}, a weekly informal zoom chat with a number theorist, open to all who wish to attend.
+
+        \yearmo{}{2020} Moderator, \textit{Algebraic geometry syndicate}, an online community of over 2000 members where students and early career mathematicians can form reading groups, receive career advice, and find community, virtually.
+
+
+
+
+    \yearrange{2011}{2014}
+        Active member, Rose Whelan society: an 
+        organization for women in math at Brown
+
+    \yearrange{2010}{2011}
+        Mentor, Girls' Angle
+	\end{date_section}
+
+
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\sectionheading{Departmental Service}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+		\begin{date_section}
+		
+			\yearmo{}{}\textbf{\textsc{University of Washington}}
+
+			\yearrange{2014}{} Number Theory Seminar Organizer
+                    	\yearrange{2024}{2025} Undergraduate program committee
+                    	\yearrange{2024}{2025} Communications committee
+                    	\yearrange{2024}{2025} Personnel committee
+                    	\yearrange{2024}{2025} Centenary committee
+			\yearrange{2022}{2024} Appointments committee (chair)
+			\yearrange{2019}{2021} Diversity committee (chair)
+			\yearrange{2020}{2021} 308 course coordinator
+			\yearrange{2020}{2021} Graduate program committee
+			\yearrange{2017}{2020} Appointments committee
+			\yearrange{2019}{2020} AWM student chapter faculty mentor
+			\yearrange{2014}{2018}
+				UW local organizer for Abelian Varieties CRG multi-site seminar 
+			\yearrange{2017}{2018} Internal chair selection committee
+			\yearrange{2014}{2017}
+			Diversity committee
+			\yearrange{2015}{2017} Planning committee
+
+			\yearmo{}{}\textbf{\textsc{Brown University}}
+			\yearrange{2011}{2012}
+				Graduate admissions committee (2 years)
+			\yearmo{}{2010} 
+			Panelist, ``Applying for academic jobs''
+
+			\yearmo{}{}\textbf{\textsc{UC Berkeley}}
+			\yearrange{2009}{2010}
+			Graduate student mentor			
+			\yearrange{2009}{2010}
+			Founder and Organizer, Graduate Student Colloquium 
+			\yearrange{2008}{2010}
+					Co-founder and active member, Unbounded Representation: 
+					an organization focused on issues of diversity in 
+					mathematics at UC Berkeley
+			\yearrange{2006}{2010}
+					Active member, Noetherian Ring: an organization 
+					for women in math at UC Berkeley
+					\yearrange{2006}{2008}
+					Officer of Mathematics Graduate Student Association
+			\yearrange{2005}{2006}
+					Organizer, Mentor Lecture Seminar Series\\
+					Co-organizer: Daniel Erman
+
+		\end{date_section}
+
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\sectionheading{Advising}%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+		\begin{date_section}
+			\yearmo{}{}Mallory Dolorfino, Ph.D. (expected)
+			\yearmo{}{}Bryan Boehnke, Ph.D. (expected)
+			\yearmo{}{}Jasmine Camero, Ph.D., Emory University (expected)
+			\yearmo{}{}Alex Wang, Ph.D. (expected)
+			\yearmo{}{} Alex Galarraga, Ph.D. (expected)
+			\yearmo{}{2024} Carlos Rivera, Ph.D.
+			\yearmo{}{2024} Thomas Carr, Ph.D. 
+			\yearmo{}{2022} Sam Roven, Ph.D.
+            		\yearmo{}{2021} Jon Kim, B.S. 
+			\yearmo{}{2020} Caleb Geiger, M.S. 
+			\yearmo{}{2019} Manar Riman, Ph.D. 
+			\yearmo{}{2019} Blanca Vina, B.S. 
+			\yearmo{}{}\textbf{\textsc{UW Writing Milestone Advising}}
+			\yearmo{}{2025} Dora Kassabova 
+			\yearmo{}{2024} Mallory Dolorfino
+			\yearmo{}{} Bryan Boehnke
+			\yearmo{}{}\textbf{\textsc{UW Student exam committees}}
+			\yearmo{}{2025} General exam committee for Ting Gong
+			\yearmo{}{2024} General exam committee for Leo Mayer   
+			\yearmo{}{2022} Doctoral exam committee, GSR, for Hao Geng     		
+			\yearmo{}{2021} Doctoral reading committee for Anthony Sanchez
+			\yearmo{}{} Doctoral reading committee for Samantha Fairchild
+			\yearmo{}{2020} General exam committee, GSR, for Hao Geng
+			\yearmo{}{2018} General exam committee for Tuomas Tajakka
+			\yearmo{}{} Doctoral reading committee for Siddharth Mathur
+			\yearmo{}{} General exam committee for Anthony Sanchez
+			\yearmo{}{} General exam committee for Kevin Lui
+			\yearmo{}{} General exam committee for Samantha Fairchild
+			\yearmo{}{2017} General exam committee for Gerardo Zelaya
+			\yearmo{}{2016} General exam committee for Kristin DeVleming
+			\yearmo{}{2015} General exam committee for Siddharth Mathur
+			\yearmo{}{} Doctoral reading committee for P\'al Zsamboki
+			\yearmo{}{} Oral preliminary exam committee for Daniel Bragg
+			\yearmo{}{} Oral preliminary exam committee for Lucas Van Meter
+			\yearmo{}{} General exam committee for Riley Casper
+
+			\yearmo{}{}\textbf{\textsc{Brown Student exam committees}}
+			\yearmo{}{2014} Topics exam committee for Ken Ascher
+			\yearmo{}{2012} Topics exam committee for Martin Ulirsch
+			\yearmo{}{2011} Topics exam committee for Wade Hindes
+			\yearmo{}{2011}%{2011} 
+			Topics exam committee for Dimitrios Moirogiannis
+			\yearmo{}{2010} Topics exam committee for Jacqueline Anderson
+		\end{date_section}
+		
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

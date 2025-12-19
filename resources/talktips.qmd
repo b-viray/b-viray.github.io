@@ -1,0 +1,131 @@
+
+### Practical tips for giving and preparing a talk ###
+
+*This content is a modification of a handout from Communicating Mathematics Effectively, a workshop co-organized with John Voight. Thanks also to Drew Sutherland, Cole Trapnell, Anthony Várilly-Alvarado, Jared Weinstein, and Olivier Wittenberg for their contributions.* 
+
+This is a list of tips that can help with some of the practical details of giving a talk. This should be looked at ***after*** you already have a storyboard for your talk that is in good shape. Following these tips can make a good narrative shine, but they do not form the foundation of a good talk.
+
+
+1. Clarifying exposition 
+* Remember: what is one big idea that you want people to leave your talk with? What is your story? Give them something to take home. 
+* Focus on what *understanding* you are trying to convey. (“What should the audience understand from \_\_\_\_”?) Channel a mother bird – you have to pre-digest the math.
+* Simplify without trivializing. Some specific ways to do so: 
+    + Consider using a well-chosen example to illustrate a proof, rather than giving full details. 
+    + Make the setting more concrete, e.g., work over $\mathbb{Q}$ instead of an arbitrary number field or global field. 
+    + Sketch a proof under additional hypotheses that preserve the main structure of the argument but remove some technical details. The modifications needed to remove these hypotheses could be discussed later if important. 
+* Details should only be provided if they have a purpose (e.g., a similar argument will be made later, illustrates the novelty of your result or limitations of previous results/techniques). 
+* If you are not providing all the details, make that clear to the audience, so they don’t spend time at their seats trying to figure out why it follows and thereby missing the next things that you say. 
+
+
+2. Presentation 
+* It is your job to control the narrative and the flow of the talk. If an audience member asks a question that would take you on a tangent, you should defer the question until the end. 
+* A talk is a performance (ideally an interactive one), and you want to grab the audience’s attention with the first words you say; if you lose them in the first few minutes, there is a chance they will tune out for the entire talk. 
+* Do NOT go over time\!   
+* Convey to the audience that you are aware of the time and will not go over.   
+    + Say “in my last few minutes” or “we close with”. 
+    + If you are finished writing and just want to say something, put down the chalk. 
+
+3. Talk notes 
+* On each page of your talk notes, write the time that the talk is supposed to *end*. In the middle of the talk, it can be easy to mix-up whether you are (for instance) giving a 50 minute talk that starts at 10 past the hour and ends on the hour or starts on the hour and ends at 10 to the hour. 
+* Include in your notes everything you want to write on the board (if it is a board talk) AND points that you want to emphasize verbally, but that won’t be on the board. Make clear in your notes which is which (e.g., color coding, different font, different location on the page etc.) 
+* If there are things that you want to have up on the board at the same time, plan in advance how you would do so, and make a note of things that you do not want to erase. 
+* If there is a diagram or statement that you want revealed in a particular order, number the parts to remember that. 
+* Try to make the end of your talk in a “choose your own adventure” format. Break the content into self-contained 5 minute chunks and clearly delineate them in your notes. 
+* Divide your talk into chunks or sections and by the start of each chunk, write approximately what time it should be when you start. Then you will have a sense as you go through the talk whether you are going too fast, too slow, or are on target. 
+* Make clear in your notes how you will emphasize the key points of your talk. 
+* Make sure your notation looks different and *sounds* different. You don’t want to say “calligraphic K” unless you need to. 
+
+4. Practice 
+* Do it! A lot. Far in advance of your talk so you have time to make changes. Ironically, usually a talk can only look effortless if it is thoughtfully prepared. 
+* Practice with a peer.   
+   + Ask them to take a photo of every board and every 5-10 minutes write down the time and what you are saying/writing on the board at that moment. 
+   + After the talk ask them for general feedback and ask if they can summarize the main points of the talk, or the main points of each board. 
+   + You can look at the photos afterwards and see if its possible to reconstruct what was happening. If there is a statement written on the board, is it clear whether it is a conclusion of an argument, an assumption of an argument, something someone else has proved, etc.? 
+* When you give the talk at the seminar/conference, can ask more senior colleagues for feedback. Choose carefully who to ask! You want to ask someone whose opinion on talks you value, but if you are close to going on the job market, you might want some senior colleagues to view you as peers, not as a mentee. 
+
+5. General advice for slide talks
+* Use 16x9 formatting for your slides!
+* Software for giving slide talks (**particularly** Beamer) promotes less thought whereas giving a good slide talk requires *more* thought.
+* Do not put something on your slide solely because the template gives you space for it. Think about whether it serves a purpose, whether you need that to make your point. 
+* If you think something is worth putting on your slide, it is worth giving the audience time to read or digest it. 
+* Audience members typically cannot read and listen at the same time. Know what you want them to do when, and guide them to do that. 
+    + Don’t unload a wall of text if you want them to focus on small parts at a time. 
+    + Can say “this is a lot of text, let me walk you through it”.   
+    + Make the text a more succinct version of the idea you are saying. 
+    + Think about the design of the slide as a way to control the audience’s eyeballs. You can add highlighting or circle a point or change the color of a word or phrase if you want to draw the audience's attention to that part.
+    * Whenever possible, try to convey your point with an image, cartoon, or animation, rather than text. You might think this is impossible at first, but give yourself time to think creatively! You might surprise yourself.
+* Think of each slide as a canvas on to which you are painting your ideas. 
+    + Carefully consider the layout and composition. 
+    + Tweak bad line breaks and reword sentences as necessary to avoid orphans and widows (dangling words on their own line). 
+    + Think about whether you can include any graphic elements (always good) – Think about whether anything should be highlighted. 
+    + Every word, symbol, or image on the slide should be there for a reason. 
+* Every slide in your talk should have a well defined role. 
+* Make notes to yourself about the words you plan to say when each slide appears – those words should complement the slide, not duplicate it! 
+* Be conservative about the number of slides you use.  
+* Don’t put too much text on a slide. The audience needs to be able to digest it. (This is not necessarily straightforward – see the next point!) 
+* The audience probably cannot remember exactly what was written multiple slides ago (sometimes not even on the last slide). You either need to spend enough time introducing a concept or object so you have high confidence this will stick with the audience or you need to verbally or visuall recall information from earlier in the talk so the audience can remind themselves of the notation/definition/theorem at the appropriate time (or both!). 
+* Aim to make the last part of your talk modular, i.e., try to make every slide or pair of slides self-contained. That way you can end on an earlier slide if you need to. 
+* Do **not** think of a slide talk as an opportunity to give more information in the same amount of time. There is some time gained from not having to write everything out, but not as much as you think, because you will need to keep reminding the audience of what you have done. 
+ * Tell your audience when they can “clear their stack”.   
+* Colors often display differently on a projector than they do on your computer screen. Avoid using light colors (they are often not visible) and try to use something else in addition to color to differentiate. 
+* Practice presenting your slides so that you are comfortable with the timing and pacing of your talk. If what you end up saying is convoluted, then your slide is poorly designed. 
+* Slides can make it easier to establish a story arc. Take advantage of that! 
+* Do not put an outline slide right after the title slide and consider not including one at all. Remember, you want to grab your audience’s attention in the first few minutes and an outline slide is a terrible way to do that! 
+* Slide pauses or reveals (when text is hidden at the beginning and then displayed later) are often used as a crutch and often abused. Using pauses to break up a wall of words does not make it better, nor does splitting your wall of words over a bunch of slides. If your slide has too many words, then rewrite the talk to get rid of the words, rather than try to hide it by using pauses and/or splitting the words across a bunch of slides. 
+
+6. Beamer specific advice 
+* Make sure your document class reads \\documentclass\[aspectratio=169\]{beamer} to ensure your slides have the correct aspect ratio. 
+* Add \\setbeamertemplate{navigation symbols}{} to your preamble to remove the navigation symbols. 
+* Use \\setbeamercovered{invisible} to completely hide text rather than just grey it out. 
+* When choosing a theme, think about whether the information displayed in the header, footer, or sidebar is necessary for your talk, and if not, don’t include it. 
+* Overleaf has several beamer themes in addition to the older built-in ones. Metropolis and SimplePlus are two fairly minimalist themes. 
+* Slide counters can distract the audience. You should know how many slides are coming and how you are doing on timing without having to look at a counter on the displayed slides. 
+* \\visible keeps a space for the text or diagram even when it is not visible, \\only does not. So if you want to *change* a symbol, statement, etc., use only, otherwise use visible. For arrows in diagrams you may have to use \\only. 
+
+7. Math presentations in Keynote (possibly works for powerpoint as well, but I don’t have experience) 
+* Keynote have built-in LaTeX support (cmd+opt+e)   
+* Magic move with a 0.5 transition is a good animation if you are moving things around from slide to slide (it helps the audience track what is actually new and what is repeated). 
+* You can pair an ipad or iphone to work as a remote for your presentation. If you pair an ipad to use as a remote, you can use the pen to write on the slides or to have as a laser pointer. 
+ 
+8. Working with the room 
+* Use a microphone if it is available.   
+* Make sure you give yourself enough time to get the tech to work. 
+* Check lines of sight, text visibility from back of room, if possible. If not possible, ask the room if they can see and look to the people in the *worst* position for their answer. If you are in an enormous empty room, encourage people to sit closer. 
+* Clean the board, even if you will not use it. 
+* Ensure the lighting is correct. 
+
+9. Focus 
+* If you’re focused on what is in your head, you will speak awkwardly. You need to get out of your head and put your focus where it belongs. 
+* If you’ve practiced, you should have a bit of extra mental room to focus on the now. 
+* If you can, try to focus your attention on what you’re saying as if you were listening to it as an audience member, or your breathing or the rhythm of your voice. Inhabit your body and focus on the physical act of communicating. 
+* Do not focus on ego nonsense (e.g., if your audience likes you, if you are going to get the job, on a nettlesome and tangential issue). 
+
+10. Speaking 
+* BREATHE\!   
+* Become aware (probably with help from a peer) of fillers or disfluencies that you use often and try to scrub them from your speech. This will take time, but is worth pursuing and practicing. The time-tested way to expunge bad habits is to use a squirt bottle. 
+* If you have a lot of verbal static/filler words (“uhhhh..., like you know whatever”), you should give yourself time to think before you say the next thing. There is no reason to hurry or to fill all empty space with sound. Instead of maximizing signal, you are introducing noise. 
+* Try to adapt the volume of your voice to project without shouting. Use your lungs. *•* Watch your cadence, which you should use to bestow emphasis. You may want to end a slide by saying, “Here is the most important thing to remember from this slide” Use your rhythm. Monotone does not allow the audience to filter the key notions from the rest. 
+* Consider using silence, like a long pause after a key point or at the end of a slide to let an idea sink in. 
+* Modulate the *pitch* of your voice: you do not want it to be too high or too low. 
+* Practice enunciating, and fighting mumbling. If you do not usually pronounce words clearly and completely, you will not be understood. Sometimes this is because you are speaking too fast beyond the capabilities the muscles of your mouth and that causes words to be jumbled. So the first thing you might try is to slow down. If that doesn’t work, try exaggerating the consonants and vowels in each word: sometimes just opening your mouth wider and breathing can make all the difference. Finally, 5  
+if the issue is more serious, consider exercises in diction (tongue twisters like “Red leather yellow leather”). 
+
+11. Nonverbal communication 
+* According to an infamous study by Nalini Ambady and Robert Rosenthal (*Half a Minute: Predicting Teacher Evaluations From Thin Slices of Nonverbal Behavior and Physical Attractiveness*), students can predict a teacher’s ratings with significant accuracy after watching a 30-second *silent* video clip of the teacher at work. 
+* Use all of the Aristotelian means of persuasion available to you: logos, pathos, and ethos. Yes, ultimately the audience will believe you because of the inescapable logic of your proof; but they will *really* believe and remember you if they have a feeling for your work and if they believe you are credible. Use meaningful language, emotional tone, be sincere, fair and unbiased, and build a rapport by using careful syntax and developing believable points of contact. 
+* Nonverbal communication includes eye contact, facial expression, posture, and ges tures. 
+    + Natural, consistent eye contact is essential to connect with your audience. Basically, if you don’t look at your audience, they will stop looking at you. You can see in their eyes if you are going too fast, too slow, or just right. Do not stare: you will make your audience feel uncomfortable. 
+    + Use your head and face. Tilting your head or nodding expresses an attempt to understand. Consider a smile, a frown, a furrowed brow, a look of confusion, and anything else that gives us a signal about what is happening. 
+    + Be open in your posture: you are welcoming the audience to share your under standing. Stand tall with your shoulders back. If you want to talk to future collaborators, you cannot have your hands blocking your body. 
+    + Learn to use gestures to your advantage. Don’t keep your hands behind your back or in your pockets, use them to point out the object of attention, to indicate movement or comparison, or whatever can reinforce the point you are trying to make verbally. But don’t go to a frenetic extreme\! 
+* Do not pace, even if you are energetic. When you shift back and forth, you look shifty, and you are distracting the audience with movement unrelated to your message, and it can give the impression that you are nervous or unsure. 
+* Avoid nervous mannerisms such as fidgeting, flicking your hair, rubbing your fingers, etc. These convey a lack of confidence, and they make your audience just as nervous. The audience can see if you are flustered in your movements. If you really are stuck on something, don’t panic, just stop and regroup by *taking a drink of water* to buy time and to give you a moment to refresh. 
+* If you are timid by nature, learn to find your inner voice and speak your truth. Find confidence in your mathematics, in yourself, in your movements. If you have to, fake it until you make it. Consider using a song or a mantra to get you fired up. By contrast, if you come across as overly confident, learn to soften your tone and speak with empathy and understanding. 
+
+ 
+12. Meta-communication 
+
+* Have you ever continued to listen to a speaker who says “I’m running out of time, let me speed through the rest of this?”? 
+* Usually, meta-comments on your speaking backfire. Talking about the fact that you are giving a talk, about your new clicker or the fancy chalk, are all distractions, they take time, and they can just create another barrier to communication. 
+* If something comes up that you need to address (or it can get a laugh), go for it! Or if there is a technical issue you need help with, then ask for it. Otherwise, you don’t need to say out loud all of the things you are trying to do to adapt to your audience. You can often silently decide what to do, and you don’t burden your audience with your thought process. 
+

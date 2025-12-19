@@ -10,5 +10,19 @@ I am continually trying to improve, so if you have any [feedback](https://forms.
 
 In addition to continually trying to improve my own exposition, I have also developed a number of resources on how to give effective math talks.
 
+![How to plan a math talk: laying out the goal, the parameters, the method, and how to assess if the goal is achieved.](images/StepsForPlanningATalk.png){width=80% fig-align="center"}
+
+* [The Value of Mathematical Storytelling](https://www.ams.org/journals/notices/202306/noti2714/noti2714.html) (joint with John Voight) 
+
+    A Notices article laying out the philosophy of mathematical storytelling and how to carry it out in practice.
+* [Worksheets](https://docs.google.com/document/d/1XMBzJgaEU3VGwa9dRO0Xu0V8WmSGWmunTmpyqz_43Kg/edit?usp=sharing) for gaining practice using mathematical storytelling:
+    + ***7 elements of storytelling*** A worksheet working through translating the elements of storytelling to a mathematical perspective.
+    + ***Storyboarding*** A worksheet with a step-by-step method to develop a storyboard. (See also [slides]() with some examples)
+    + ***Talk plan self-assessment*** A checklist self-assessment to see if your talk is hitting the key narrative elements. 
+    + ***Peer feedback form*** A worksheet giving structure for feedback from a practice talk.
+* [Practical tips for giving and preparing a talk](talktips.qmd) (This should be looked at *after* you have developed a compelling storyboard.)
 
 
+<!-- Want to develop resources for making slides -->
+
+<!-- Want to develop resources for making slides -->

@@ -31,10 +31,11 @@ website:
        href: https://math.washington.edu
      - text: "University of Washington"
        href: https://www.washington.edu  
-     - section: "Research Directions"
-       contents:
-        - text: "Algebraic points on curves"
-          href: projects/algebraicpoints.qmd
+     - text: Seattle, WA, USA
+    #  - section: "Research Directions"
+    #    contents:
+        # - text: "Algebraic points on curves"
+        #   href: projects/algebraicpoints.qmd
 
 
 

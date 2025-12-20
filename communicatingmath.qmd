@@ -20,7 +20,7 @@ In addition to continually trying to improve my own exposition, I have also deve
     + ***Storyboarding*** A worksheet with a step-by-step method to develop a storyboard. (See also [slides]() with some examples)
     + ***Talk plan self-assessment*** A checklist self-assessment to see if your talk is hitting the key narrative elements. 
     + ***Peer feedback form*** A worksheet giving structure for feedback from a practice talk.
-* [Practical tips for giving and preparing a talk](talktips.qmd) (This should be looked at *after* you have developed a compelling storyboard.)
+* [Practical tips for giving and preparing a talk](resources/talktips.qmd) (This should be looked at *after* you have developed a compelling storyboard.)
 
 
 <!-- Want to develop resources for making slides -->

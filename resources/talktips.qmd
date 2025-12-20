@@ -73,7 +73,12 @@ This is a list of tips that can help with some of the practical details of givin
 * Do not put an outline slide right after the title slide and consider not including one at all. Remember, you want to grab your audience’s attention in the first few minutes and an outline slide is a terrible way to do that! 
 * Slide pauses or reveals (when text is hidden at the beginning and then displayed later) are often used as a crutch and often abused. Using pauses to break up a wall of words does not make it better, nor does splitting your wall of words over a bunch of slides. If your slide has too many words, then rewrite the talk to get rid of the words, rather than try to hide it by using pauses and/or splitting the words across a bunch of slides. 
 
-6. Beamer specific advice 
+6. Math presentations in Keynote (possibly works for powerpoint as well, but I don’t have experience) 
+* **Keynote has built-in LaTeX support!!** (cmd+opt+e)   
+* Magic move with a 0.5 transition is a good animation if you are moving things around from slide to slide (it helps the audience track what is actually new and what is repeated). 
+* You can pair an ipad or iphone to work as a remote for your presentation. If you pair an ipad to use as a remote, you can use the pen to write on the slides or to have as a laser pointer. 
+
+7. Beamer specific advice 
 * Make sure your document class reads \\documentclass\[aspectratio=169\]{beamer} to ensure your slides have the correct aspect ratio. 
 * Add \\setbeamertemplate{navigation symbols}{} to your preamble to remove the navigation symbols. 
 * Use \\setbeamercovered{invisible} to completely hide text rather than just grey it out. 
@@ -81,11 +86,6 @@ This is a list of tips that can help with some of the practical details of givin
 * Overleaf has several beamer themes in addition to the older built-in ones. Metropolis and SimplePlus are two fairly minimalist themes. 
 * Slide counters can distract the audience. You should know how many slides are coming and how you are doing on timing without having to look at a counter on the displayed slides. 
 * \\visible keeps a space for the text or diagram even when it is not visible, \\only does not. So if you want to *change* a symbol, statement, etc., use only, otherwise use visible. For arrows in diagrams you may have to use \\only. 
-
-7. Math presentations in Keynote (possibly works for powerpoint as well, but I don’t have experience) 
-* Keynote have built-in LaTeX support (cmd+opt+e)   
-* Magic move with a 0.5 transition is a good animation if you are moving things around from slide to slide (it helps the audience track what is actually new and what is repeated). 
-* You can pair an ipad or iphone to work as a remote for your presentation. If you pair an ipad to use as a remote, you can use the pen to write on the slides or to have as a laser pointer. 
  
 8. Working with the room 
 * Use a microphone if it is available.   

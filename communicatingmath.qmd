@@ -1,16 +1,16 @@
 ---
-title: "Crafting a math talk"
+title: "Math talks"
 ---
-
-### Communicating mathematics effectively ###
-
 Communicating mathematics is an important part of one's job as a mathematician. When I started my mathematical career, I needed to devote a substantial amount of time and effort to improve at this skill, and this improvement was greatly facilitated by feedback from my peers and mentors.
 
 I am continually trying to improve, so if you have any [feedback](https://forms.gle/S2F2vmyYZTiat5757) for me about parts of my papers or talks you did not understand as well as you would have liked, I would love to hear it!
 
-In addition to continually trying to improve my own exposition, I have also developed a number of resources on how to give effective math talks.
+### Communicating mathematics effectively ###
 
+In 2018, I co-organized (with John Voight) a week-long workshop titled *Communicating mathematics effectively*, for late-stage graduate students and early-stage postdocs in number theory to learn and develop strategies for giving clear, motivated, and informative talks; this workshop was funded by my CAREER grant.
 ![How to plan a math talk: laying out the goal, the parameters, the method, and how to assess if the goal is achieved.](images/StepsForPlanningATalk.png){width=80% fig-align="center"}
+
+In the years since, I have refined many of the workshop materials to work as stand-alone modules, which I have incorporated into graduate topics courses (one co-taught with Chris Hoffman).
 
 * [The Value of Mathematical Storytelling](https://www.ams.org/journals/notices/202306/noti2714/noti2714.html) (joint with John Voight) 
 

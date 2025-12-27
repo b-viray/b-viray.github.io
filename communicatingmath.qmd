@@ -1,6 +1,6 @@
-<!-- ---
+---
 title: "Crafting a math talk"
---- -->
+---
 
 ### Communicating mathematics effectively ###
 

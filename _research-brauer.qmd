@@ -1,0 +1,22 @@
+In 2022, I gave a lecture series at the Park City Mathematics Institute (PCMI) Graduate Summer School: *Rational points on varieties and the Brauer-Manin obstruction*. My [lecture notes](https://arxiv.org/abs/2303.17796) give an introduction to the Brauer-Manin obstruction, so-called "capturing" subgroups, and questions concerning the Brauer-Manin obstruction over extensions.
+
+#### Talks (PCMI 2022)
+
+```{=html}
+<iframe width="560" height="315" src="https://www.youtube.com/embed/m4J5yBo-f3Y" title="PCMI Lecture 1" allowfullscreen style="border:none; max-width:100%; margin-bottom:8px;"></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/NSH-yXErpxs" title="PCMI Lecture 2" allowfullscreen style="border:none; max-width:100%; margin-bottom:8px;"></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/KWLeJUX8kX0" title="PCMI Lecture 3" allowfullscreen style="border:none; max-width:100%;"></iframe>
+```
+
+#### Capturing subgroups
+
+- *Brauer-Manin obstructions requiring arbitrarily many Brauer classes*, joint with Jennifer Berg, Carlo Pagano, Bjorn Poonen, Michael Stoll, Nicholas Triantafillou, and Isabel Vogt — [arXiv](https://arxiv.org/abs/2309.05931)
+- *The $d$-primary Brauer-Manin obstruction for curves*, joint with Brendan Creutz and Felipe Voloch — [arXiv](https://arxiv.org/abs/1711.00569)
+- *Degree and the Brauer-Manin obstruction*, joint with Brendan Creutz, with an appendix by Alexei Skorobogatov — [arXiv](https://arxiv.org/abs/1703.02187)
+
+#### Obstruction under extensions
+
+- *On the Hasse principle for conic bundles over even extensions*, by Sam Roven and Alex Wang — [arXiv](https://arxiv.org/abs/2508.07564)
+- *Quartic del Pezzo surfaces without quadratic points*, joint with Brendan Creutz — [arXiv](https://arxiv.org/abs/2408.08436)
+- *Quadratic points on intersections of two quadrics*, joint with Brendan Creutz — [arXiv](https://arxiv.org/abs/2106.08560)
+- *Persistence of the Brauer-Manin obstruction on cubic surfaces*, joint with Carlos Rivera — [arXiv](https://arxiv.org/abs/2111.03546)

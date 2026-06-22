@@ -1,0 +1,22 @@
+In 2015, I gave a lecture series at the Arizona Winter School about explicit computation of the Brauer group and the Brauer-Manin obstruction on surfaces. Lecture notes are available on the [Arizona Winter School website](https://swc-math.github.io/aws/2015/index.html).
+
+#### Talks (Arizona Winter School 2015)
+
+```{=html}
+<iframe width="560" height="315" src="https://www.youtube.com/embed/CxIojT0gmCc" title="AWS Lecture 1" allowfullscreen style="border:none; max-width:100%; margin-bottom:8px;"></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/fAJnoUPCuVg" title="AWS Lecture 2" allowfullscreen style="border:none; max-width:100%; margin-bottom:8px;"></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/70kZzHZLfv8" title="AWS Lecture 3" allowfullscreen style="border:none; max-width:100%; margin-bottom:8px;"></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/EH6lZASFbus" title="AWS Lecture 4" allowfullscreen style="border:none; max-width:100%; margin-bottom:8px;"></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/uI0GsizXcgo" title="AWS Lecture 5" allowfullscreen style="border:none; max-width:100%;"></iframe>
+```
+
+#### Papers
+
+- *Insufficiency of the Brauer-Manin obstruction for Enriques surfaces*, joint with Francesca Balestrieri, Jennifer Berg, Michelle Manes, and Jennifer Park — [arXiv](https://arxiv.org/abs/1501.04974)
+- *Unramified Brauer classes on cyclic covers of the projective plane*, joint with Colin Ingalls, Andrew Obus, and Ekin Ozman — [arXiv](https://arxiv.org/abs/1310.8005)
+- *On Brauer groups of double covers of ruled surfaces*, joint with Brendan Creutz — [arXiv](https://arxiv.org/abs/1306.3251)
+- *Two torsion in the Brauer group of a hyperelliptic curve*, joint with Brendan Creutz — [arXiv](https://arxiv.org/abs/1403.2924)
+- *Vertical Brauer groups and del Pezzo surfaces of degree 4*, joint with Anthony Várilly-Alvarado — [arXiv](https://arxiv.org/abs/1210.0920)
+- *Higher dimensional analogs of Châtelet surfaces*, joint with Anthony Várilly-Alvarado — [arXiv](https://arxiv.org/abs/1101.5453)
+- *Failure of the Hasse principle for Enriques surfaces*, joint with Anthony Várilly-Alvarado — [arXiv](https://arxiv.org/abs/1008.0596)
+- *Failure of the Hasse principle for Châtelet surfaces in characteristic $2$* — [arXiv](https://arxiv.org/abs/0902.3644)

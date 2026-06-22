@@ -1,1 +1,93 @@
 /* css styles */
+
+/* ── Research card grid ───────────────────────────────────────── */
+.r-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  margin: 2rem 0 0;
+}
+
+.r-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+.r-card:hover {
+  border-color: #aaa;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
+.r-card.active {
+  border: 2px solid #4a7fc1;
+}
+.r-card img {
+  width: 100%;
+  height: 140px;
+  object-fit: contain;  /* contain = full image visible, no cropping */
+  background: transparent;
+  display: block;
+}
+.r-card-body {
+  padding: 14px 16px;
+}
+.r-card-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin: 0 0 6px;
+  line-height: 1.35;
+}
+.r-card-blurb {
+  font-size: 0.82rem;
+  color: #666;
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* Expand panel */
+.r-panel {
+  display: none;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin-top: 16px;
+  overflow: hidden;
+}
+.r-panel.visible {
+  display: block;
+}
+.r-panel-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 20px;
+  border-bottom: 1px solid #eee;
+}
+.r-panel-header h3 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+.r-close-btn {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: #888;
+  padding: 0;
+  line-height: 1;
+}
+.r-close-btn:hover { color: #333; }
+.r-panel-body {
+  display: flex;
+}
+.r-panel-content {
+  padding: 20px 24px;
+  flex: 1;
+  min-width: 0;
+}
+
+/* Hide the content source divs */
+.r-hidden {
+  display: none;
+}

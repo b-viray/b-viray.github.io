@@ -2,13 +2,16 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.26">
+<meta name="generator" content="quarto-1.9.38">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
 <title>Research – Bianca Viray</title>
 <style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
 div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -32,15 +35,14 @@ ul.task-list li input[type="checkbox"] {
 <meta name="quarto:offset" content="./">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-9d0d2c4fe2252cabc78cecb5d575732d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-81974946a21284b78f30ecdd7f568928.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <link href="site_libs/quarto-contrib/academicons-1.9.4/all.css" rel="stylesheet">
 <link href="site_libs/quarto-contrib/academicons-1.9.4/size.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
@@ -72,7 +74,7 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <script type="text/javascript">
 const typesetMath = (el) => {
@@ -151,6 +153,11 @@ window.Quarto = {
     <a class="nav-link" href="https://orcid.org/0000-0003-3808-2366"> 
 <span class="menu-text"><i class="ai  ai-orcid" aria-label="orcid"></i></span></a>
   </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./bvirayCV.pdf"> <i class="bi bi-file-earmark-text" role="img">
+</i> 
+<span class="menu-text">CV</span></a>
+  </li>  
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
@@ -224,65 +231,223 @@ window.Quarto = {
 
 
 <p>Complete lists of my preprints and publications can be found on my <a href="https://arxiv.org/a/viray_b_1.html">arXiv</a> page and on my <a href="https://mathscinet.ams.org/mathscinet/MRAuthorID/890397">MathSciNet author page</a> (subscription required).</p>
-<p><em>Under construction: research descriptions in progress</em> <!-- ## Arithmetic geometry
+<p><em>Under construction: research descriptions in progress</em></p>
+<section id="recent-preprints" class="level2">
+<h2 class="anchored" data-anchor-id="recent-preprints">Recent preprints</h2>
+<div id="arxiv-papers">
+  <p style="color:#888; font-size:0.9rem;">Loading recent papers…</p>
+</div>
 
-My research lies in arithmetic geometry.  As the name suggests, this research area sits at the interface of two fields: *arithmetic* (the study of integers and rational numbers, which is heavily influenced by the prime numbers); and *geometry* (the study of curves, surfaces, and higher-dimensional shapes).  These distinct areas are brought together through the study of solutions to polynomial equations, i.e., the study of varieties.  
+<script>
+fetch("https://export.arxiv.org/api/query?search_query=au:viray_b_1&sortBy=submittedDate&sortOrder=descending&max_results=5")
+  .then(function(r) { return r.text(); })
+  .then(function(txt) {
+    var xml     = new DOMParser().parseFromString(txt, "application/xml");
+    var entries = Array.from(xml.getElementsByTagName("entry")).slice(0, 5);
+    if (entries.length === 0) { throw new Error("no entries"); }
+    var html = "<ul style='padding-left:1.1rem; margin:0; font-size:0.9rem; line-height:1.9'>";
+    entries.forEach(function(e) {
+      var title   = e.getElementsByTagName("title")[0].textContent.trim();
+      var url     = e.getElementsByTagName("id")[0].textContent.trim();
+      var authors = Array.from(e.getElementsByTagName("author"))
+                        .map(function(a) { return a.getElementsByTagName("name")[0].textContent.trim(); })
+                        .join(", ");
+      var pub     = e.getElementsByTagName("published")[0];
+      var date    = pub ? pub.textContent.trim().slice(0, 7) : "";
+      html += "<li><a href='" + url + "'>" + title + "</a><br>"
+            + "<span style='color:#666; font-size:0.82rem'>" + authors + " &mdash; " + date + "</span></li>";
+    });
+    html += "</ul>";
+    document.getElementById("arxiv-papers").innerHTML = html;
+  })
+  .catch(function() {
+    document.getElementById("arxiv-papers").innerHTML =
+      "<p>Could not load recent papers. See the <a href='https://arxiv.org/a/viray_b_1.html'>arXiv page</a> instead.</p>";
+  });
+</script>
+<!-- ================================================================
+  CARD GRID
 
-A guiding philosophy of this area is *Geometry controls arithmetic*. For example, since the geometry of the above variety on the right is more complicated than the one on the left (the one on the right has larger genus, which is seen by the increased 'curviness' of the graph), the arithmetic properties of the variety on the right *should* also be more complicated.  This turns out to be true in two senses: the rational points (i.e., the solutions with all coordinates in Q) on the variety on the right are sparser than those on the left, and it is harder to characterize all the rational points on the variety on the right.
+  HOW TO ADD A NEW CARD:
+    1. Create _research-yourarea.qmd with the expanded content (plain markdown)
+    2. Copy one card <div> block below; update:
+         - id="card-yourarea"
+         - onclick="rExpand('yourarea')"
+         - img src and alt
+         - title and blurb text
+    3. Below in the HIDDEN CONTENT section, copy one of the existing
+         include blocks and change "curves/brauer/surfaces" to "yourarea".
+    4. Below in the JS section, add to rImages and rTitles:
+         yourarea: "images/yourimage.png"   (same filename as the img src above)
+         yourarea: "Your area title"
+================================================================ -->
+<div class="r-grid">
 
-This philosophy provides a powerful perspective, but many mathematical questions need to be answered to make it precise.  Which aspects of the geometry are important for a given arithmetic property? When we try to understand finer arithmetic properties, do we need to delve deeper into the geometry? What are the limitations of this philosophy? --></p>
-<section id="algebraic-points-on-curves" class="level3">
-<h3 class="anchored" data-anchor-id="algebraic-points-on-curves">Algebraic points on curves</h3>
+  <!-- CARD: Algebraic points on curves
+       Image name appears twice: here (img src) and in rImages in the JS section below.
+       If you rename the image file, update it in both places. -->
+  <div class="r-card" id="card-curves" onclick="rExpand('curves')">
+    <img src="images/P1parameterization.png" alt="Algebraic points on curves">
+    <div class="r-card-body">
+      <p class="r-card-title">Algebraic points on curves</p>
+      <p class="r-card-blurb">Leveraging geometric tools to organize \(\overline{k}\) points on a curve over a number field.</p>
+    </div>
+  </div>
+
+  <!-- CARD: The Brauer–Manin obstruction
+       Image name appears twice: here (img src) and in rImages in the JS section below.
+       If you rename the image file, update it in both places. -->
+  <div class="r-card" id="card-brauer" onclick="rExpand('brauer')">
+    <img src="images/BrauerManinPairing.png" alt="The Brauer–Manin obstruction">
+    <div class="r-card-body">
+      <p class="r-card-title">The Brauer–Manin obstruction</p>
+      <p class="r-card-blurb">Capturing subgroups and studying behavior under field extensions.</p>
+    </div>
+  </div>
+
+  <!-- CARD: Rational points on surfaces
+       Image name appears twice: here (img src) and in rImages in the JS section below.
+       If you rename the image file, update it in both places. -->
+  <div class="r-card" id="card-surfaces" onclick="rExpand('surfaces')">
+    <img src="images/TwoK3surfaces.png" alt="Rational points on surfaces">
+    <div class="r-card-body">
+      <p class="r-card-title">Rational points on surfaces</p>
+      <p class="r-card-blurb">Explicit computation of the Brauer group and Brauer–Manin obstruction on surfaces.</p>
+    </div>
+  </div>
+
+</div>
+
+<!-- Expand panel -->
+<div class="r-panel" id="r-panel">
+  <div class="r-panel-header">
+    <h3 id="r-panel-title" class="anchored"></h3>
+    <button class="r-close-btn" onclick="rClose()" aria-label="Close">✕</button>
+  </div>
+  <div class="r-panel-body">
+    <div class="r-panel-content" id="r-panel-content"></div>
+  </div>
+</div>
+<!-- ================================================================
+  HIDDEN CONTENT SOURCES — one per card
+  Each block includes a plain markdown file and hides it.
+  The JS below copies the content into the expand panel on click.
+================================================================ -->
+<div id="src-curves" class="r-hidden">
 <p>The arithmetic of a curve over a number field <span class="math inline">\(k\)</span> encapsulates all of its <span class="math inline">\(\overline{k}\)</span> points together with the action of the absolute Galois group. Points on curves can also be viewed as divisors, and this dual identity gives powerful geometric tools to approach the problem. My research in this direction aims to leverage these geometric tools to organize and perhaps even understand <span class="math inline">\(\overline{k}\)</span> points on a curve.</p>
 <p>The article <a href="https://arxiv.org/abs/2406.14353">Isolated and parameterized points on curves</a>, written jointly with Isabel Vogt, gives an introduction to these ideas with several examples.</p>
-<p>Here are some talks I’ve given on these concepts:</p>
+<section id="talks" class="level4">
+<h4 class="anchored" data-anchor-id="talks">Talks</h4>
+<p>Colloquium at CRM, April 2024:</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/X7t52p5Q4lQ" title="Colloquium at CRM, April 2024" allowfullscreen="" style="border:none; max-width:100%;"></iframe>
+<p>Workshop at ICERM, June 2025: <a href="https://icerm.brown.edu/video_archive/4172">video</a></p>
+</section>
+<section id="papers" class="level4">
+<h4 class="anchored" data-anchor-id="papers">Papers</h4>
 <ul>
-<li>Colloquium at CRM in April 2024 <div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/X7t52p5Q4lQ" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div></li>
-<li>Workshop at ICERM in June 2025 <a href="https://icerm.brown.edu/video_archive/4172">video</a></li>
-</ul>
-<p>and here are my and my students’ research papers in this direction:</p>
-<ul>
-<li><em>Number fields generated by points in linear systems on curves</em>, joint with Irmak Balçik, Stephanie Chan, and Yuan Liu <a href="https://arxiv.org/pdf/2503.07846"><i class="ai  ai-arxiv" aria-label="arxiv"></i></a><br>
-</li>
-<li><em>Superelliptic degree sets over Henselian fields</em>, by Alex Galarraga and Alex Wang <a href="https://arxiv.org/abs/2511.15951"><i class="ai  ai-arxiv" aria-label="arxiv"></i></a></li>
-<li><em>Degrees of points on varieties over Henselian fields</em>, joint with Brendan Creutz <a href="https://arxiv.org/abs/2306.01267"><i class="ai  ai-arxiv" aria-label="arxiv"></i></a></li>
-<li><em>On the level of modular curves that give rise to isolated j-invariants</em>, joint with Abbey Bourdon, Ozlem Ejder, Yuan Liu and Frances Odumodu <a href="https://arxiv.org/abs/1808.04520"><i class="ai  ai-arxiv" aria-label="arxiv"></i></a></li>
+<li><em>Number fields generated by points in linear systems on curves</em>, joint with Irmak Balçik, Stephanie Chan, and Yuan Liu — <a href="https://arxiv.org/pdf/2503.07846">arXiv</a></li>
+<li><em>Superelliptic degree sets over Henselian fields</em>, by Alex Galarraga and Alex Wang — <a href="https://arxiv.org/abs/2511.15951">arXiv</a></li>
+<li><em>Degrees of points on varieties over Henselian fields</em>, joint with Brendan Creutz — <a href="https://arxiv.org/abs/2306.01267">arXiv</a></li>
+<li><em>On the level of modular curves that give rise to isolated j-invariants</em>, joint with Abbey Bourdon, Ozlem Ejder, Yuan Liu and Frances Odumodu — <a href="https://arxiv.org/abs/1808.04520">arXiv</a></li>
 </ul>
 </section>
-<section id="the-brauer-manin-obstruction-capturing-subgroups-and-behavior-under-extensions" class="level3">
-<h3 class="anchored" data-anchor-id="the-brauer-manin-obstruction-capturing-subgroups-and-behavior-under-extensions">The Brauer-Manin obstruction: capturing subgroups and behavior under extensions</h3>
-<p>In 2022, I gave a lecture series at the Park City Mathematics Institute (PCMI) Graduate Summer School: Number Theory Informed by Computation. The lecture series was titled: <em>Rational points on varieties and the Brauer-Manin obstruction</em>, and focused on (my perspective on) how the feedback loop between computation and theory currently manifests in the study of rational points and the Brauer-Manin obstruction. My <a href="https://arxiv.org/abs/2303.17796">lecture notes</a> give an introduction to the Brauer-Manin obstruction, so-called “capturing” subgroups of the Brauer-Manin obstruction, and questions concerning the Brauer-Manin obstruction over extensions.</p>
-<p></p><div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/m4J5yBo-f3Y" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div> <div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/NSH-yXErpxs" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div> <div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/KWLeJUX8kX0" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div><p></p>
-<p>Here are my and my students’ research papers in this direction:</p>
-<p><strong>Capturing subgroups of the Brauer-Manin obstruction</strong></p>
+</div>
+<div id="src-brauer" class="r-hidden">
+<p>In 2022, I gave a lecture series at the Park City Mathematics Institute (PCMI) Graduate Summer School: <em>Rational points on varieties and the Brauer-Manin obstruction</em>. My <a href="https://arxiv.org/abs/2303.17796">lecture notes</a> give an introduction to the Brauer-Manin obstruction, so-called “capturing” subgroups, and questions concerning the Brauer-Manin obstruction over extensions.</p>
+<section id="talks-pcmi-2022" class="level4">
+<h4 class="anchored" data-anchor-id="talks-pcmi-2022">Talks (PCMI 2022)</h4>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/m4J5yBo-f3Y" title="PCMI Lecture 1" allowfullscreen="" style="border:none; max-width:100%; margin-bottom:8px;"></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/NSH-yXErpxs" title="PCMI Lecture 2" allowfullscreen="" style="border:none; max-width:100%; margin-bottom:8px;"></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/KWLeJUX8kX0" title="PCMI Lecture 3" allowfullscreen="" style="border:none; max-width:100%;"></iframe>
+</section>
+<section id="capturing-subgroups" class="level4">
+<h4 class="anchored" data-anchor-id="capturing-subgroups">Capturing subgroups</h4>
 <ul>
-<li><em>Brauer-Manin obstructions requiring arbitrarily many Brauer classes</em>, joint with Jennifer Berg, Carlo Pagano, Bjorn Poonen, Michael Stoll, Nicholas Triantafillou, and Isabel Vogt <a href="https://arxiv.org/abs/2309.05931"><i class="ai  ai-arxiv" aria-label="arxiv"></i></a></li>
-<li><em>The <span class="math inline">\(d\)</span>-primary Brauer-Manin obstruction for curves</em>, joint with Brendan Creutz and Felipe Voloch <a href="https://arxiv.org/abs/1711.00569"><i class="ai  ai-arxiv" aria-label="arxiv"></i></a></li>
-<li><em>Degree and the Brauer-Manin obstruction</em>, joint with Brendan Creutz, with an appendix by Alexei Skorobogatov <a href="https://arxiv.org/abs/1703.02187"><i class="ai  ai-arxiv" aria-label="arxiv"></i></a></li>
-</ul>
-<p><strong>The Brauer-Manin obstruction under extensions</strong></p>
-<ul>
-<li><em>On the Hasse principle for conic bundles over even extensions</em> by Sam Roven and Alex Wang <a href="https://arxiv.org/abs/2508.07564"><i class="ai  ai-arxiv" aria-label="arxiv"></i></a></li>
-<li><em>Quartic del Pezzo surfaces without quadratic points</em>, joint with Brendan Creutz <a href="https://arxiv.org/abs/2408.08436"><i class="ai  ai-arxiv" aria-label="arxiv"></i></a></li>
-<li><em>Quadratic points on intersections of two quadrics</em>, joint with Brendan Creuz <a href="https://arxiv.org/abs/2106.08560"><i class="ai  ai-arxiv" aria-label="arxiv"></i></a></li>
-<li><em>Persistence of the Brauer-Manin obstruction on cubic surfaces</em>, joint with Carlos Rivera <a href="https://arxiv.org/abs/2111.03546"><i class="ai  ai-arxiv" aria-label="arxiv"></i></a></li>
+<li><em>Brauer-Manin obstructions requiring arbitrarily many Brauer classes</em>, joint with Jennifer Berg, Carlo Pagano, Bjorn Poonen, Michael Stoll, Nicholas Triantafillou, and Isabel Vogt — <a href="https://arxiv.org/abs/2309.05931">arXiv</a></li>
+<li><em>The <span class="math inline">\(d\)</span>-primary Brauer-Manin obstruction for curves</em>, joint with Brendan Creutz and Felipe Voloch — <a href="https://arxiv.org/abs/1711.00569">arXiv</a></li>
+<li><em>Degree and the Brauer-Manin obstruction</em>, joint with Brendan Creutz, with an appendix by Alexei Skorobogatov — <a href="https://arxiv.org/abs/1703.02187">arXiv</a></li>
 </ul>
 </section>
-<section id="rational-points-on-surfaces" class="level3">
-<h3 class="anchored" data-anchor-id="rational-points-on-surfaces">Rational points on surfaces</h3>
+<section id="obstruction-under-extensions" class="level4">
+<h4 class="anchored" data-anchor-id="obstruction-under-extensions">Obstruction under extensions</h4>
+<ul>
+<li><em>On the Hasse principle for conic bundles over even extensions</em>, by Sam Roven and Alex Wang — <a href="https://arxiv.org/abs/2508.07564">arXiv</a></li>
+<li><em>Quartic del Pezzo surfaces without quadratic points</em>, joint with Brendan Creutz — <a href="https://arxiv.org/abs/2408.08436">arXiv</a></li>
+<li><em>Quadratic points on intersections of two quadrics</em>, joint with Brendan Creutz — <a href="https://arxiv.org/abs/2106.08560">arXiv</a></li>
+<li><em>Persistence of the Brauer-Manin obstruction on cubic surfaces</em>, joint with Carlos Rivera — <a href="https://arxiv.org/abs/2111.03546">arXiv</a></li>
+</ul>
+</section>
+</div>
+<div id="src-surfaces" class="r-hidden">
 <p>In 2015, I gave a lecture series at the Arizona Winter School about explicit computation of the Brauer group and the Brauer-Manin obstruction on surfaces. Lecture notes are available on the <a href="https://swc-math.github.io/aws/2015/index.html">Arizona Winter School website</a>.</p>
-<p></p><div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/CxIojT0gmCc" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div> <div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/fAJnoUPCuVg" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div> <div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/70kZzHZLfv8" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div> <div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/EH6lZASFbus" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div> <div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/uI0GsizXcgo" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div><p></p>
-<p>Here are my research papers in this direction:</p>
+<section id="talks-arizona-winter-school-2015" class="level4">
+<h4 class="anchored" data-anchor-id="talks-arizona-winter-school-2015">Talks (Arizona Winter School 2015)</h4>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/CxIojT0gmCc" title="AWS Lecture 1" allowfullscreen="" style="border:none; max-width:100%; margin-bottom:8px;"></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/fAJnoUPCuVg" title="AWS Lecture 2" allowfullscreen="" style="border:none; max-width:100%; margin-bottom:8px;"></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/70kZzHZLfv8" title="AWS Lecture 3" allowfullscreen="" style="border:none; max-width:100%; margin-bottom:8px;"></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/EH6lZASFbus" title="AWS Lecture 4" allowfullscreen="" style="border:none; max-width:100%; margin-bottom:8px;"></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/uI0GsizXcgo" title="AWS Lecture 5" allowfullscreen="" style="border:none; max-width:100%;"></iframe>
+</section>
+<section id="papers-1" class="level4">
+<h4 class="anchored" data-anchor-id="papers-1">Papers</h4>
 <ul>
-<li><em>Insufficiency of the Brauer-Manin obstruction for Enriques surfaces</em>, joint with Francesca Balestrieri, Jennifer Berg, Michelle Manes, and Jennifer Park <a href="https://arxiv.org/abs/1501.04974"><i class="ai  ai-arxiv" aria-label="arxiv"></i></a></li>
-<li><em>Unramified Brauer classes on cyclic covers of the projective plane</em>, joint with Colin Ingalls, Andrew Obus, and Ekin Ozman <a href="https://arxiv.org/abs/1310.8005"><i class="ai  ai-arxiv" aria-label="arxiv"></i></a></li>
-<li><em>On Brauer groups of double covers of ruled surfaces</em>, joint with Brendan Creutz <a href="https://arxiv.org/abs/1306.3251"><i class="ai  ai-arxiv" aria-label="arxiv"></i></a></li>
-<li><em>Two torsion in the Brauer group of a hyperelliptic curve</em>, joint with Brendan Creutz <a href="https://arxiv.org/abs/1403.2924"><i class="ai  ai-arxiv" aria-label="arxiv"></i></a></li>
-<li><em>Vertical Brauer groups and del Pezzo surfaces of degree $$</em>, joint with Anthony Várilly-Alvarado <a href="https://arxiv.org/abs/1210.0920"><i class="ai  ai-arxiv" aria-label="arxiv"></i></a></li>
-<li><em>Higher dimensional analogs of Châtelet surfaces</em>, joint with Anthony Várilly-Alvarado <a href="https://arxiv.org/abs/1101.5453"><i class="ai  ai-arxiv" aria-label="arxiv"></i></a></li>
-<li><em>Failure of the Hasse principle for Enriques surfaces</em>, joint with Anthony Várilly-Alvarado <a href="https://arxiv.org/abs/1008.0596"><i class="ai  ai-arxiv" aria-label="arxiv"></i></a></li>
-<li><em>Failure of the Hasse principle for Châtelet surfaces in characteristic <span class="math inline">\(2\)</span></em> <a href="https://arxiv.org/abs/0902.3644"><i class="ai  ai-arxiv" aria-label="arxiv"></i></a></li>
+<li><em>Insufficiency of the Brauer-Manin obstruction for Enriques surfaces</em>, joint with Francesca Balestrieri, Jennifer Berg, Michelle Manes, and Jennifer Park — <a href="https://arxiv.org/abs/1501.04974">arXiv</a></li>
+<li><em>Unramified Brauer classes on cyclic covers of the projective plane</em>, joint with Colin Ingalls, Andrew Obus, and Ekin Ozman — <a href="https://arxiv.org/abs/1310.8005">arXiv</a></li>
+<li><em>On Brauer groups of double covers of ruled surfaces</em>, joint with Brendan Creutz — <a href="https://arxiv.org/abs/1306.3251">arXiv</a></li>
+<li><em>Two torsion in the Brauer group of a hyperelliptic curve</em>, joint with Brendan Creutz — <a href="https://arxiv.org/abs/1403.2924">arXiv</a></li>
+<li><em>Vertical Brauer groups and del Pezzo surfaces of degree 4</em>, joint with Anthony Várilly-Alvarado — <a href="https://arxiv.org/abs/1210.0920">arXiv</a></li>
+<li><em>Higher dimensional analogs of Châtelet surfaces</em>, joint with Anthony Várilly-Alvarado — <a href="https://arxiv.org/abs/1101.5453">arXiv</a></li>
+<li><em>Failure of the Hasse principle for Enriques surfaces</em>, joint with Anthony Várilly-Alvarado — <a href="https://arxiv.org/abs/1008.0596">arXiv</a></li>
+<li><em>Failure of the Hasse principle for Châtelet surfaces in characteristic <span class="math inline">\(2\)</span></em> — <a href="https://arxiv.org/abs/0902.3644">arXiv</a></li>
 </ul>
+</section>
+</div>
+<!-- ================================================================
+  JS — when adding a new card, add one line to rImages and one to rTitles below.
+  The image filename here must match the img src in the card above.
+================================================================ -->
+<script>
+var rImages = {
+  // Image filename must match the img src in each card above.
+  // If you rename an image, update it here AND in the card's img src.
+  curves:   "images/P1parameterization.png",
+  brauer:   "images/BrauerManinPairing.png",
+  surfaces: "images/TwoK3surfaces.png"
+};
+
+var rTitles = {
+  // Title shown in the expand panel header — usually the same as the card title.
+  curves:   "Algebraic points on curves",
+  brauer:   "The Brauer–Manin obstruction",
+  surfaces: "Rational points on surfaces"
+};
+
+var rCurrent = null;
+
+function rExpand(key) {
+  if (rCurrent === key) { rClose(); return; }
+  rCurrent = key;
+
+  document.querySelectorAll('.r-card').forEach(function(c) { c.classList.remove('active'); });
+  document.getElementById('card-' + key).classList.add('active');
+
+  document.getElementById('r-panel-title').textContent = rTitles[key];
+  document.getElementById('r-panel-content').innerHTML =
+    document.getElementById('src-' + key).innerHTML;
+
+  var panel = document.getElementById('r-panel');
+  panel.classList.add('visible');
+  panel.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+
+  if (window.MathJax) { MathJax.typesetPromise([panel]); }
+}
+
+function rClose() {
+  rCurrent = null;
+  document.querySelectorAll('.r-card').forEach(function(c) { c.classList.remove('active'); });
+  document.getElementById('r-panel').classList.remove('visible');
+}
+</script>
 
 
 </section>

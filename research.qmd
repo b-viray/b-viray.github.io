@@ -2,45 +2,49 @@
 title: Research
 ---
 
-Complete lists of my preprints and publications can be found on my [arXiv](https://arxiv.org/a/viray_b_1.html) page and on my [MathSciNet author page](https://mathscinet.ams.org/mathscinet/MRAuthorID/890397) (subscription required).
-
-*Under construction: research descriptions in progress*
 
 ## Recent preprints
 
-```{=html}
-<div id="arxiv-papers">
-  <p style="color:#888; font-size:0.9rem;">Loading recent papers…</p>
-</div>
+```{python}
+#| echo: false
+#| output: asis
+import urllib.request
+import xml.etree.ElementTree as ET
 
-<script>
-fetch("https://export.arxiv.org/api/query?search_query=au:viray_b_1&sortBy=submittedDate&sortOrder=descending&max_results=5")
-  .then(function(r) { return r.text(); })
-  .then(function(txt) {
-    var xml     = new DOMParser().parseFromString(txt, "application/xml");
-    var entries = Array.from(xml.getElementsByTagName("entry")).slice(0, 5);
-    if (entries.length === 0) { throw new Error("no entries"); }
-    var html = "<ul style='padding-left:1.1rem; margin:0; font-size:0.9rem; line-height:1.9'>";
-    entries.forEach(function(e) {
-      var title   = e.getElementsByTagName("title")[0].textContent.trim();
-      var url     = e.getElementsByTagName("id")[0].textContent.trim();
-      var authors = Array.from(e.getElementsByTagName("author"))
-                        .map(function(a) { return a.getElementsByTagName("name")[0].textContent.trim(); })
-                        .join(", ");
-      var pub     = e.getElementsByTagName("published")[0];
-      var date    = pub ? pub.textContent.trim().slice(0, 7) : "";
-      html += "<li><a href='" + url + "'>" + title + "</a><br>"
-            + "<span style='color:#666; font-size:0.82rem'>" + authors + " &mdash; " + date + "</span></li>";
-    });
-    html += "</ul>";
-    document.getElementById("arxiv-papers").innerHTML = html;
-  })
-  .catch(function() {
-    document.getElementById("arxiv-papers").innerHTML =
-      "<p>Could not load recent papers. See the <a href='https://arxiv.org/a/viray_b_1.html'>arXiv page</a> instead.</p>";
-  });
-</script>
+url = ("https://export.arxiv.org/api/query"
+       "?search_query=au:viray_b"
+       "&sortBy=submittedDate&sortOrder=descending&max_results=5")
+
+ns = "http://www.w3.org/2005/Atom"
+
+try:
+    with urllib.request.urlopen(url) as r:
+        root = ET.fromstring(r.read())
+    entries = root.findall(f"{{{ns}}}entry")
+    print('<ul style="padding-left:1.1rem; margin:0; font-size:0.9rem; line-height:1.9">')
+    for e in entries:
+        title   = e.find(f"{{{ns}}}title").text.strip()
+        link    = e.find(f"{{{ns}}}id").text.strip()
+        authors = ", ".join(
+            a.find(f"{{{ns}}}name").text.strip()
+            for a in e.findall(f"{{{ns}}}author")
+        )
+        pub  = e.find(f"{{{ns}}}published")
+        date = pub.text.strip()[:7] if pub is not None else ""
+        print(f'<li><a href="{link}">{title}</a><br>'
+              f'<span style="color:#666; font-size:0.82rem">{authors} &mdash; {date}</span></li>')
+    print("</ul>")
+except Exception as ex:
+    print(f'<p>Could not load recent papers (<code>{ex}</code>). '
+          f'See the <a href="https://arxiv.org/a/viray_b_1.html">arXiv page</a> instead.</p>')
 ```
+
+
+Complete lists of my preprints and publications can be found on my [arXiv](https://arxiv.org/a/viray_b_1.html) page and on my [MathSciNet author page](https://mathscinet.ams.org/mathscinet/MRAuthorID/890397) (subscription required).
+
+
+## Research areas
+*Under construction: research descriptions in progress*
 
 <!-- ================================================================
   CARD GRID

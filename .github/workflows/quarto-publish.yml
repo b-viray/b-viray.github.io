@@ -22,7 +22,9 @@ jobs:
           # uncomment below and fill to pin a version
           # version: 0.9.600
       
-      # add software dependencies here
+      - name: Install Python dependencies
+        run: pip install jupyter
+
       - name: Render and Publish
         uses: quarto-dev/quarto-actions/publish@v2
         with:

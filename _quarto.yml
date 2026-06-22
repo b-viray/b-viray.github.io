@@ -42,9 +42,6 @@ website:
 
 
 
-execute:
-  freeze: auto   # cache code chunk output; re-runs only when chunk source changes
-
 format:
   html:
     theme:

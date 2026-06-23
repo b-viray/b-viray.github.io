@@ -18,13 +18,11 @@ Prior to coming to the University of Washington, I spent four years at [Brown Un
 It is my responsibility and privilege to be able to contribute to the mathematical community more broadly than through research alone. From 2020 to 2026, I served on the [Council](https://www.ams.org/about-us/governance/council/member-council) of the [American Mathematical Society](https://www.ams.org/), first as a member at large, and then as Vice President, and from 2022-26 on the [Executive Committee](https://www.ams.org/about-us/governance/exec-comm/ec) of Council. Through this, I have also served on the AMS Committee on Publications, the AMS Canvassing Committee, the AMS Prize Oversight Committee, and the Editorial Board of the [Bulletin of the AMS](ams.org/publications/journals/journalsframework/bull). Outside of the American Mathematical Society, I serve on the [Women in Numbers](https://womeninnumbertheory.org/) steering committee, I am a co-organizer of the Roots of Unity workshop series and Women in Numbers 7, and I serve on the board of directors of [Girls' Angle](https://girlsangle.org/). I have also developed several resources on [mathematical communication](communicatingmath.qmd). 
 A complete list of my current and past service can be found on my [C.V](bvirayCV.pdf).
 
-
-
-
+***
 
 <p></p>
 
-
+<br><br><br><br><br><br>
 
 This is a Quarto website.
 

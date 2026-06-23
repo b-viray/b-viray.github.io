@@ -22,36 +22,6 @@ jobs:
           # uncomment below and fill to pin a version
           # version: 0.9.600
       
-      - name: Fetch recent arXiv papers
-        run: |
-          python3 << 'EOF'
-          import urllib.request, xml.etree.ElementTree as ET
-          url = ("https://export.arxiv.org/api/query"
-                 "?search_query=au:viray_b"
-                 "&sortBy=submittedDate&sortOrder=descending&max_results=5")
-          ns = "http://www.w3.org/2005/Atom"
-          try:
-              with urllib.request.urlopen(url) as r:
-                  root = ET.fromstring(r.read())
-              entries = root.findall(f"{{{ns}}}entry")
-              lines = ['<ul style="padding-left:1.1rem; margin:0; font-size:0.9rem; line-height:1.9">']
-              for e in entries:
-                  title   = e.find(f"{{{ns}}}title").text.strip()
-                  link    = e.find(f"{{{ns}}}id").text.strip()
-                  authors = ", ".join(a.find(f"{{{ns}}}name").text.strip()
-                                      for a in e.findall(f"{{{ns}}}author"))
-                  pub  = e.find(f"{{{ns}}}published")
-                  date = pub.text.strip()[:7] if pub is not None else ""
-                  lines.append(f'<li><a href="{link}">{title}</a><br>'
-                               f'<span style="color:#666; font-size:0.82rem">{authors} &mdash; {date}</span></li>')
-              lines.append("</ul>")
-              with open("_arxiv-recent.html", "w") as f:
-                  f.write("\n".join(lines))
-              print(f"Wrote {len(entries)} papers to _arxiv-recent.html")
-          except Exception as ex:
-              print(f"arXiv fetch failed: {ex}")
-          EOF
-
       - name: Render and Publish
         uses: quarto-dev/quarto-actions/publish@v2
         with:

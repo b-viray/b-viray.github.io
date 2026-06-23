@@ -3,9 +3,12 @@ title: Research
 ---
 
 
-## Recent preprints
+<!-- ## Recent preprints -->
 
-{{< include _arxiv-recent.html >}}
+<!-- Add your recent papers here manually, e.g.:
+- *Paper title*, joint with Co-author — [arXiv](https://arxiv.org/abs/XXXX.XXXXX)
+-->
+
 
 
 Complete lists of my preprints and publications can be found on my [arXiv](https://arxiv.org/a/viray_b_1.html) page and on my [MathSciNet author page](https://mathscinet.ams.org/mathscinet/MRAuthorID/890397) (subscription required).

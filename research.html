@@ -230,41 +230,14 @@ window.Quarto = {
 </header>
 
 
+<!-- ## Recent preprints -->
+<!-- Add your recent papers here manually, e.g.:
+- *Paper title*, joint with Co-author — [arXiv](https://arxiv.org/abs/XXXX.XXXXX)
+-->
 <p>Complete lists of my preprints and publications can be found on my <a href="https://arxiv.org/a/viray_b_1.html">arXiv</a> page and on my <a href="https://mathscinet.ams.org/mathscinet/MRAuthorID/890397">MathSciNet author page</a> (subscription required).</p>
+<section id="research-areas" class="level2">
+<h2 class="anchored" data-anchor-id="research-areas">Research areas</h2>
 <p><em>Under construction: research descriptions in progress</em></p>
-<section id="recent-preprints" class="level2">
-<h2 class="anchored" data-anchor-id="recent-preprints">Recent preprints</h2>
-<div id="arxiv-papers">
-  <p style="color:#888; font-size:0.9rem;">Loading recent papers…</p>
-</div>
-
-<script>
-fetch("https://export.arxiv.org/api/query?search_query=au:viray_b_1&sortBy=submittedDate&sortOrder=descending&max_results=5")
-  .then(function(r) { return r.text(); })
-  .then(function(txt) {
-    var xml     = new DOMParser().parseFromString(txt, "application/xml");
-    var entries = Array.from(xml.getElementsByTagName("entry")).slice(0, 5);
-    if (entries.length === 0) { throw new Error("no entries"); }
-    var html = "<ul style='padding-left:1.1rem; margin:0; font-size:0.9rem; line-height:1.9'>";
-    entries.forEach(function(e) {
-      var title   = e.getElementsByTagName("title")[0].textContent.trim();
-      var url     = e.getElementsByTagName("id")[0].textContent.trim();
-      var authors = Array.from(e.getElementsByTagName("author"))
-                        .map(function(a) { return a.getElementsByTagName("name")[0].textContent.trim(); })
-                        .join(", ");
-      var pub     = e.getElementsByTagName("published")[0];
-      var date    = pub ? pub.textContent.trim().slice(0, 7) : "";
-      html += "<li><a href='" + url + "'>" + title + "</a><br>"
-            + "<span style='color:#666; font-size:0.82rem'>" + authors + " &mdash; " + date + "</span></li>";
-    });
-    html += "</ul>";
-    document.getElementById("arxiv-papers").innerHTML = html;
-  })
-  .catch(function() {
-    document.getElementById("arxiv-papers").innerHTML =
-      "<p>Could not load recent papers. See the <a href='https://arxiv.org/a/viray_b_1.html'>arXiv page</a> instead.</p>";
-  });
-</script>
 <!-- ================================================================
   CARD GRID
 

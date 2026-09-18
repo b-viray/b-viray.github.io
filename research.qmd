@@ -18,7 +18,7 @@ title: Research
   Styling lives in styles.css under "arXiv recent papers".
 ================================================================ -->
 
-## Recent papers
+## Recent preprints (updated automatically)
 
 {{< include _arxiv-recent.qmd >}}
 

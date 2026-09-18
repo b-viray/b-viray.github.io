@@ -4,3 +4,4 @@ _site
 Gemfile.lock
 /.quarto/
 **/*.quarto_ipynb
+__pycache__/

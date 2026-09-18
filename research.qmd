@@ -2,14 +2,55 @@
 title: Research
 ---
 
+<!-- ================================================================
+  RECENT PAPERS
 
-<!-- ## Recent preprints -->
+  The list below is generated, not hand-written: scripts/fetch_arxiv.py
+  reads the Atom feed of the arXiv author identifier page
+  (arxiv.org/a/viray_b_1.atom, tied to ORCID 0000-0003-3808-2366) and
+  writes _arxiv-recent.qmd. Using the author ID rather than a name search
+  means only papers claimed under that identifier can ever appear.
+  The script runs in the GitHub Actions build on every push and once a day
+  on a schedule, so the page keeps itself current. Nothing here needs
+  editing when a new paper is posted.
 
-<!-- Add your recent papers here manually, e.g.:
-- *Paper title*, joint with Co-author — [arXiv](https://arxiv.org/abs/XXXX.XXXXX)
--->
+  To change how many papers appear, edit MAX_PAPERS in scripts/fetch_arxiv.py.
+  Styling lives in styles.css under "arXiv recent papers".
+================================================================ -->
 
+## Recent papers
 
+{{< include _arxiv-recent.qmd >}}
+
+```{=html}
+<script>
+// Collapse each abstract behind a toggle. Done in JS so that if scripting is
+// off the abstracts simply stay visible rather than becoming unreachable.
+document.addEventListener("DOMContentLoaded", function () {
+  document.querySelectorAll(".arxiv-paper").forEach(function (paper) {
+    var abs = paper.querySelector(".arxiv-abs");
+    if (!abs) return;
+
+    var btn = document.createElement("button");
+    btn.type = "button";
+    btn.className = "arxiv-toggle";
+    btn.setAttribute("aria-expanded", "false");
+    btn.innerHTML = '<span class="arxiv-caret">&#9656;</span>Abstract';
+
+    abs.classList.add("collapsed");
+    abs.setAttribute("aria-hidden", "true");
+    paper.insertBefore(btn, abs);
+
+    btn.addEventListener("click", function () {
+      var open = !abs.classList.toggle("collapsed");
+      btn.classList.toggle("open", open);
+      btn.setAttribute("aria-expanded", open ? "true" : "false");
+      abs.setAttribute("aria-hidden", open ? "false" : "true");
+    });
+  });
+});
+</script>
+```
 
 Complete lists of my preprints and publications can be found on my [arXiv](https://arxiv.org/a/viray_b_1.html) page and on my [MathSciNet author page](https://mathscinet.ams.org/mathscinet/MRAuthorID/890397) (subscription required).
 

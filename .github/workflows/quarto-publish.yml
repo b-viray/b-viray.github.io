@@ -1,7 +1,11 @@
 on:
   workflow_dispatch:
   push:
-    branches: [main]
+    branches: [master]
+  # Rebuild once a day so the arXiv list on the research page stays current
+  # even when nothing has been pushed. 11:00 UTC = 4am PDT / 3am PST.
+  schedule:
+    - cron: "0 11 * * *"
 
 name: Quarto Publish
 
@@ -26,6 +30,12 @@ jobs:
         uses: quarto-dev/quarto-actions/setup@v2
         with:
           tinytex: true
+
+      # Regenerates _arxiv-recent.qmd (the recent-papers list on the research
+      # page). If arXiv is unreachable the script leaves the committed file
+      # alone and exits 0, so a bad arXiv day never breaks the build.
+      - name: Refresh recent arXiv papers
+        run: python3 scripts/fetch_arxiv.py
 
       - name: Render and Publish
         uses: quarto-dev/quarto-actions/publish@v2

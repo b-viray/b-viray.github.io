@@ -4,6 +4,12 @@ The article [Isolated and parameterized points on curves](https://arxiv.org/abs/
 
 #### Talks
 
+Number Theory Web seminar, May 2026: 
+```{=html}
+<iframe width="560" height="315" src="https://www.youtube.com/embed/tlQu4-xrp4g" title="Unlikely ramification is residue fields of points on curves" allowfullscreen style="border:none; max-width:100%;"></iframe>
+```
+
+
 Colloquium at CRM, April 2024:
 
 ```{=html}

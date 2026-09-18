@@ -128,14 +128,17 @@ def render(papers):
         meta = "%s %s" % (paper["date_label"], paper["date"])
         if paper["journal"]:
             meta += " &middot; " + md_escape(paper["journal"])
+        # Two lines per paper: the title, then one byline holding authors,
+        # date, journal reference and (added by research.qmd's script at
+        # load time) the Abstract toggle.
+        byline = "[%s]{.arxiv-authors}[ &middot; ]{.arxiv-sep}[%s]{.arxiv-meta}" % (
+            md_escape(", ".join(paper["authors"])), meta)
         lines += [
             ":::: {.arxiv-paper}",
             "",
             "[%s](%s){.arxiv-title}" % (md_escape(paper["title"]), paper["url"]),
             "",
-            "[%s]{.arxiv-authors}" % md_escape(", ".join(paper["authors"])),
-            "",
-            "[%s]{.arxiv-meta}" % meta,
+            "[%s]{.arxiv-byline}" % byline,
             "",
             "::: {.arxiv-abs}",
             md_escape(paper["abstract"]),

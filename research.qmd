@@ -39,7 +39,20 @@ document.addEventListener("DOMContentLoaded", function () {
 
     abs.classList.add("collapsed");
     abs.setAttribute("aria-hidden", "true");
-    paper.insertBefore(btn, abs);
+
+    // Sit at the end of the byline (authors / date / journal) to keep each
+    // paper two lines tall; fall back to a line of its own if that byline
+    // is missing for any reason.
+    var byline = paper.querySelector(".arxiv-byline");
+    if (byline) {
+      var sep = document.createElement("span");
+      sep.className = "arxiv-sep";
+      sep.innerHTML = " &middot; ";
+      byline.appendChild(sep);
+      byline.appendChild(btn);
+    } else {
+      paper.insertBefore(btn, abs);
+    }
 
     btn.addEventListener("click", function () {
       var open = !abs.classList.toggle("collapsed");

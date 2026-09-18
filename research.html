@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.38">
+<meta name="generator" content="quarto-1.10.18">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -12,10 +12,13 @@
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
 */
-code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -39,10 +42,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-81974946a21284b78f30ecdd7f568928.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-2f7078f60d62853b647160687fc81b82.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <link href="site_libs/quarto-contrib/academicons-1.9.4/all.css" rel="stylesheet">
 <link href="site_libs/quarto-contrib/academicons-1.9.4/size.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
@@ -74,7 +77,7 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
 
 <script type="text/javascript">
 const typesetMath = (el) => {
@@ -230,11 +233,98 @@ window.Quarto = {
 </header>
 
 
-<!-- ## Recent preprints -->
-<!-- Add your recent papers here manually, e.g.:
-- *Paper title*, joint with Co-author — [arXiv](https://arxiv.org/abs/XXXX.XXXXX)
--->
+<!-- ================================================================
+  RECENT PAPERS
+
+  The list below is generated, not hand-written: scripts/fetch_arxiv.py
+  reads the Atom feed of the arXiv author identifier page
+  (arxiv.org/a/viray_b_1.atom, tied to ORCID 0000-0003-3808-2366) and
+  writes _arxiv-recent.qmd. Using the author ID rather than a name search
+  means only papers claimed under that identifier can ever appear.
+  The script runs in the GitHub Actions build on every push and once a day
+  on a schedule, so the page keeps itself current. Nothing here needs
+  editing when a new paper is posted.
+
+  To change how many papers appear, edit MAX_PAPERS in scripts/fetch_arxiv.py.
+  Styling lives in styles.css under "arXiv recent papers".
+================================================================ -->
+<section id="recent-papers" class="level2">
+<h2 class="anchored" data-anchor-id="recent-papers">Recent papers</h2>
+<!-- GENERATED FILE - do not edit by hand.
+     Written by scripts/fetch_arxiv.py, which runs in the GitHub Actions
+     build (and on a daily schedule) before Quarto renders the site.
+     Included near the top of research.qmd. -->
+<div class="arxiv-list">
+<div class="arxiv-paper">
+<p><a href="https://arxiv.org/abs/2406.13510" class="arxiv-title">Conic bundle threefolds differing by a constant Brauer class and connections to rationality</a></p>
+<p><span class="arxiv-authors">Sarah Frei, Lena Ji, Soumya Sankar, Bianca Viray, Isabel Vogt</span></p>
+<p><span class="arxiv-meta">Updated 18 June 2026</span></p>
+<div class="arxiv-abs">
+<p>A double cover <span class="math inline">\(Y\)</span> of <span class="math inline">\(\mathbb{P}^1 \times \mathbb{P}^2\)</span> ramified over a general <span class="math inline">\((2,2)\)</span>-divisor will have the structure of a geometrically standard conic bundle ramified over a smooth plane quartic <span class="math inline">\(\Delta \subset \mathbb{P}^2\)</span> via the second projection. These threefolds are rational over algebraically closed fields; however, over nonclosed fields, including <span class="math inline">\(\mathbb{R}\)</span>, their rationality is an open problem. In this paper, we characterize rationality over <span class="math inline">\(\mathbb{R}\)</span> when <span class="math inline">\(\Delta(\mathbb{R})\)</span> has at least two connected components (extending work of M. Ji and the second author) and over local fields when all odd degree fibers of the first projection have nonsquare discriminant. We obtain these applications by proving general results comparing the conic bundle structure on <span class="math inline">\(Y\)</span> with the conic bundle structure on a well-chosen intersection of two quadrics. The difference between these two conic bundles is encoded by a constant Brauer class, and we prove that this class encodes the obstruction to the existence of a section of the first projection <span class="math inline">\(Y\to\mathbb{P}^1\)</span>.</p>
+</div>
+</div>
+<div class="arxiv-paper">
+<p><a href="https://arxiv.org/abs/2406.14353" class="arxiv-title">Isolated and parameterized points on curves</a></p>
+<p><span class="arxiv-authors">Bianca Viray, Isabel Vogt</span></p>
+<p><span class="arxiv-meta">Updated 24 September 2025 · Ess. Number Th. 5 (2026) 1-47</span></p>
+<div class="arxiv-abs">
+<p>We give a self-contained introduction to isolated points on curves and their counterpoint, parameterized points, that situates these concepts within the study of the arithmetic of curves. In particular, we show how natural geometric constructions of infinitely many degree d points on curves motivate the definitions of <span class="math inline">\(\mathbb{P}^1\)</span>- and AV-parameterized points and explain how a result of Faltings implies that there are only finitely many isolated points on any curve. We use parameterized points to deduce properties of the density degree set and show that parameterized points of very low degree arise for a unique geometric reason. The paper includes several examples that illustrate the possible behaviors of degree d points.</p>
+</div>
+</div>
+<div class="arxiv-paper">
+<p><a href="https://arxiv.org/abs/2503.07846" class="arxiv-title">Number fields generated by points in linear systems on curves</a></p>
+<p><span class="arxiv-authors">Irmak Balçik, Stephanie Chan, Yuan Liu, Bianca Viray</span></p>
+<p><span class="arxiv-meta">Updated 20 September 2025</span></p>
+<div class="arxiv-abs">
+<p>We develop techniques for determining the fibers of a morphism of curves <span class="math inline">\(\phi: C \to D\)</span> over a nonarchimedean local field <span class="math inline">\(K\)</span>. These results have applications to studying closed point on curves over global fields since closed points on <span class="math inline">\(C\)</span> of large degree or of very small degree are known to all arise as fibers of morphisms.</p>
+</div>
+</div>
+<div class="arxiv-paper">
+<p><a href="https://arxiv.org/abs/2408.08436" class="arxiv-title">Quartic del Pezzo surfaces without quadratic points</a></p>
+<p><span class="arxiv-authors">Brendan Creutz, Bianca Viray</span></p>
+<p><span class="arxiv-meta">Updated 15 May 2025 · Pacific J. Math. 337 (2025) 215-224</span></p>
+<div class="arxiv-abs">
+<p>Previous work of the authors showed that every quartic del Pezzo surface over a number field has index dividing <span class="math inline">\(2\)</span> (i.e., has a closed point of degree <span class="math inline">\(2\)</span> modulo <span class="math inline">\(4\)</span>),, and asked whether such surfaces always have a closed point of degree <span class="math inline">\(2\)</span>. We resolve this by constructing infinitely many quartic del Pezzo surfaces over <span class="math inline">\(\mathbb{Q}\)</span> without degree <span class="math inline">\(2\)</span> points. These are the first examples of smooth intersections of two quadrics with index strictly less than the minimal degree of a closed point.</p>
+</div>
+</div>
+<div class="arxiv-paper">
+<p><a href="https://arxiv.org/abs/2309.05931" class="arxiv-title">Brauer-Manin obstructions requiring arbitrarily many Brauer classes</a></p>
+<p><span class="arxiv-authors">Jennifer Berg, Carlo Pagano, Bjorn Poonen, Michael Stoll, Nicholas Triantafillou, Bianca Viray, Isabel Vogt</span></p>
+<p><span class="arxiv-meta">Posted 12 September 2023</span></p>
+<div class="arxiv-abs">
+<p>On a projective variety defined over a global field, any Brauer–Manin obstruction to the existence of rational points is captured by a finite subgroup of the Brauer group. We show that this subgroup can require arbitrarily many generators.</p>
+</div>
+</div>
+</div>
+<script>
+// Collapse each abstract behind a toggle. Done in JS so that if scripting is
+// off the abstracts simply stay visible rather than becoming unreachable.
+document.addEventListener("DOMContentLoaded", function () {
+  document.querySelectorAll(".arxiv-paper").forEach(function (paper) {
+    var abs = paper.querySelector(".arxiv-abs");
+    if (!abs) return;
+
+    var btn = document.createElement("button");
+    btn.type = "button";
+    btn.className = "arxiv-toggle";
+    btn.setAttribute("aria-expanded", "false");
+    btn.innerHTML = '<span class="arxiv-caret">&#9656;</span>Abstract';
+
+    abs.classList.add("collapsed");
+    abs.setAttribute("aria-hidden", "true");
+    paper.insertBefore(btn, abs);
+
+    btn.addEventListener("click", function () {
+      var open = !abs.classList.toggle("collapsed");
+      btn.classList.toggle("open", open);
+      btn.setAttribute("aria-expanded", open ? "true" : "false");
+      abs.setAttribute("aria-hidden", open ? "false" : "true");
+    });
+  });
+});
+</script>
 <p>Complete lists of my preprints and publications can be found on my <a href="https://arxiv.org/a/viray_b_1.html">arXiv</a> page and on my <a href="https://mathscinet.ams.org/mathscinet/MRAuthorID/890397">MathSciNet author page</a> (subscription required).</p>
+</section>
 <section id="research-areas" class="level2">
 <h2 class="anchored" data-anchor-id="research-areas">Research areas</h2>
 <p><em>Under construction: research descriptions in progress</em></p>
@@ -311,6 +401,8 @@ window.Quarto = {
 <p>The article <a href="https://arxiv.org/abs/2406.14353">Isolated and parameterized points on curves</a>, written jointly with Isabel Vogt, gives an introduction to these ideas with several examples.</p>
 <section id="talks" class="level4">
 <h4 class="anchored" data-anchor-id="talks">Talks</h4>
+<p>Number Theory Web seminar, May 2026:</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/tlQu4-xrp4g" title="Unlikely ramification is residue fields of points on curves" allowfullscreen="" style="border:none; max-width:100%;"></iframe>
 <p>Colloquium at CRM, April 2024:</p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/X7t52p5Q4lQ" title="Colloquium at CRM, April 2024" allowfullscreen="" style="border:none; max-width:100%;"></iframe>
 <p>Workshop at ICERM, June 2025: <a href="https://icerm.brown.edu/video_archive/4172">video</a></p>

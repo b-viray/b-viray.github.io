@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://b-viray.github.io/research.html</loc>
-    <lastmod>2026-11-17T19:27:58.951Z</lastmod>
-  </url>
-  <url>
-    <loc>https://b-viray.github.io/index.html</loc>
-    <lastmod>2026-11-17T19:27:58.951Z</lastmod>
-  </url>
-  <url>
-    <loc>https://b-viray.github.io/resources/talktips.html</loc>
-    <lastmod>2026-11-17T19:27:58.951Z</lastmod>
-  </url>
-  <url>
     <loc>https://b-viray.github.io/projects/algebraicpoints.html</loc>
-    <lastmod>2026-11-17T19:27:58.951Z</lastmod>
+    <lastmod>2026-11-19T19:13:47.397Z</lastmod>
+  </url>
+  <url>
+    <loc>https://b-viray.github.io/research.html</loc>
+    <lastmod>2026-11-19T19:13:47.397Z</lastmod>
   </url>
   <url>
     <loc>https://b-viray.github.io/NTseminar.html</loc>
-    <lastmod>2026-11-17T19:27:58.907Z</lastmod>
+    <lastmod>2026-11-19T19:13:47.351Z</lastmod>
   </url>
   <url>
     <loc>https://b-viray.github.io/communicatingmath.html</loc>
-    <lastmod>2026-11-17T19:27:58.916Z</lastmod>
+    <lastmod>2026-11-19T19:13:47.359Z</lastmod>
+  </url>
+  <url>
+    <loc>https://b-viray.github.io/resources/talktips.html</loc>
+    <lastmod>2026-11-19T19:13:47.397Z</lastmod>
+  </url>
+  <url>
+    <loc>https://b-viray.github.io/index.html</loc>
+    <lastmod>2026-11-19T19:13:47.397Z</lastmod>
   </url>
 </urlset>
